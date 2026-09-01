@@ -1,0 +1,2907 @@
+[
+  {
+    "incident_id": "INC-0001",
+    "campaign_id": "CAM-001",
+    "campaign_name": "State Bank KYC SMS Phishing Syndicate",
+    "channel": "sms",
+    "language": "hinglish",
+    "raw_content": "URGENT ALERT: Aapka HDFC account block ho gaya hai. KYC update karne ke liye turant is link pe click karein: https://sbi-kyc-verify-online.com/login/verify?id=4657 ya call karein +919876543210.",
+    "timestamp": "2026-08-19T23:02:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-001",
+      "impersonation_target": "bank",
+      "tactics": [
+        "urgency_pressure",
+        "authority_impersonation",
+        "credential_harvesting"
+      ],
+      "phone": "+919876543210",
+      "upi": "secure.kyc@paytm",
+      "domain": "sbi-kyc-verify-online.com",
+      "url": "https://sbi-kyc-verify-online.com/login/verify?id=4657",
+      "actor": "PhantomRaven",
+      "malware": "FakeBank APK Stealer"
+    }
+  },
+  {
+    "incident_id": "INC-0002",
+    "campaign_id": "CAM-001",
+    "campaign_name": "State Bank KYC SMS Phishing Syndicate",
+    "channel": "sms",
+    "language": "english",
+    "raw_content": "URGENT: Your Axis Bank account #XX8359 is blocked due to pending KYC verification. Update immediately at https://sbi-kyc-verify-online.com/login/verify?id=9928 or call +919876543210 to prevent permanent suspension.",
+    "timestamp": "2026-08-09T10:48:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-001",
+      "impersonation_target": "bank",
+      "tactics": [
+        "urgency_pressure",
+        "authority_impersonation",
+        "credential_harvesting"
+      ],
+      "phone": "+919876543210",
+      "upi": "sbikyc.verify@okhdfcbank",
+      "domain": "sbi-kyc-verify-online.com",
+      "url": "https://sbi-kyc-verify-online.com/login/verify?id=9928",
+      "actor": "PhantomRaven",
+      "malware": "FakeBank APK Stealer"
+    }
+  },
+  {
+    "incident_id": "INC-0003",
+    "campaign_id": "CAM-001",
+    "campaign_name": "State Bank KYC SMS Phishing Syndicate",
+    "channel": "whatsapp",
+    "language": "hinglish",
+    "raw_content": "Dear Customer, aapke Paytm Payments Bank debit card reward points ₹7,850 expire ho rahe hain. Redeem karne ke liye visit karein https://sbi-kyc-verify-online.com/login/verify?id=4527 ya UPI secure.kyc@paytm pe check karein.",
+    "timestamp": "2026-08-13T13:22:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-001",
+      "impersonation_target": "bank",
+      "tactics": [
+        "urgency_pressure",
+        "authority_impersonation",
+        "credential_harvesting"
+      ],
+      "phone": "+919876543211",
+      "upi": "secure.kyc@paytm",
+      "domain": "sbi-kyc-verify-online.com",
+      "url": "https://sbi-kyc-verify-online.com/login/verify?id=4527",
+      "actor": "PhantomRaven",
+      "malware": "FakeBank APK Stealer"
+    }
+  },
+  {
+    "incident_id": "INC-0004",
+    "campaign_id": "CAM-001",
+    "campaign_name": "State Bank KYC SMS Phishing Syndicate",
+    "channel": "whatsapp",
+    "language": "hinglish",
+    "raw_content": "Dear Customer, aapke SBI debit card reward points ₹7,850 expire ho rahe hain. Redeem karne ke liye visit karein https://sbi-kyc-verify-online.com/login/verify?id=7201 ya UPI secure.kyc@paytm pe check karein.",
+    "timestamp": "2026-08-22T05:56:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-001",
+      "impersonation_target": "bank",
+      "tactics": [
+        "urgency_pressure",
+        "authority_impersonation",
+        "credential_harvesting"
+      ],
+      "phone": "+919876543210",
+      "upi": "secure.kyc@paytm",
+      "domain": "sbi-kyc-verify-online.com",
+      "url": "https://sbi-kyc-verify-online.com/login/verify?id=7201",
+      "actor": "PhantomRaven",
+      "malware": "FakeBank APK Stealer"
+    }
+  },
+  {
+    "incident_id": "INC-0005",
+    "campaign_id": "CAM-001",
+    "campaign_name": "State Bank KYC SMS Phishing Syndicate",
+    "channel": "whatsapp",
+    "language": "hinglish",
+    "raw_content": "URGENT ALERT: Aapka SBI account block ho gaya hai. KYC update karne ke liye turant is link pe click karein: https://sbi-kyc-verify-online.com/login/verify?id=5741 ya call karein +919876543210.",
+    "timestamp": "2026-08-10T00:40:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-001",
+      "impersonation_target": "bank",
+      "tactics": [
+        "urgency_pressure",
+        "authority_impersonation",
+        "credential_harvesting"
+      ],
+      "phone": "+919876543210",
+      "upi": "sbikyc.verify@okhdfcbank",
+      "domain": "sbi-kyc-verify-online.com",
+      "url": "https://sbi-kyc-verify-online.com/login/verify?id=5741",
+      "actor": "PhantomRaven",
+      "malware": "FakeBank APK Stealer"
+    }
+  },
+  {
+    "incident_id": "INC-0006",
+    "campaign_id": "CAM-001",
+    "campaign_name": "State Bank KYC SMS Phishing Syndicate",
+    "channel": "whatsapp",
+    "language": "english",
+    "raw_content": "Dear Customer, your Punjab National Bank netbanking services are suspended. Please complete PAN/Aadhaar update at https://update-bank-kyc-secure.net/login/verify?id=2169. Contact support at +919876543211.",
+    "timestamp": "2026-08-08T15:29:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-001",
+      "impersonation_target": "bank",
+      "tactics": [
+        "urgency_pressure",
+        "authority_impersonation",
+        "credential_harvesting"
+      ],
+      "phone": "+919876543211",
+      "upi": "sbikyc.verify@okhdfcbank",
+      "domain": "update-bank-kyc-secure.net",
+      "url": "https://update-bank-kyc-secure.net/login/verify?id=2169",
+      "actor": "PhantomRaven",
+      "malware": "FakeBank APK Stealer"
+    }
+  },
+  {
+    "incident_id": "INC-0007",
+    "campaign_id": "CAM-001",
+    "campaign_name": "State Bank KYC SMS Phishing Syndicate",
+    "channel": "email",
+    "language": "hindi",
+    "raw_content": "आवश्यक सूचना: आपका Paytm Payments Bank खाता केवाईसी पूरा न होने के कारण आज बंद हो जाएगा। तुरंत https://sbi-kyc-verify-online.com/login/verify?id=1525 पर जाएं या +919876543211 पर संपर्क करें।",
+    "timestamp": "2026-08-03T16:58:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-001",
+      "impersonation_target": "bank",
+      "tactics": [
+        "urgency_pressure",
+        "authority_impersonation",
+        "credential_harvesting"
+      ],
+      "phone": "+919876543211",
+      "upi": "sbikyc.verify@okhdfcbank",
+      "domain": "sbi-kyc-verify-online.com",
+      "url": "https://sbi-kyc-verify-online.com/login/verify?id=1525",
+      "actor": "PhantomRaven",
+      "malware": "FakeBank APK Stealer"
+    }
+  },
+  {
+    "incident_id": "INC-0008",
+    "campaign_id": "CAM-001",
+    "campaign_name": "State Bank KYC SMS Phishing Syndicate",
+    "channel": "whatsapp",
+    "language": "hinglish",
+    "raw_content": "Dear Customer, aapke HDFC debit card reward points ₹7,850 expire ho rahe hain. Redeem karne ke liye visit karein https://update-bank-kyc-secure.net/login/verify?id=8517 ya UPI secure.kyc@paytm pe check karein.",
+    "timestamp": "2026-08-25T03:34:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-001",
+      "impersonation_target": "bank",
+      "tactics": [
+        "urgency_pressure",
+        "authority_impersonation",
+        "credential_harvesting"
+      ],
+      "phone": "+919876543210",
+      "upi": "secure.kyc@paytm",
+      "domain": "update-bank-kyc-secure.net",
+      "url": "https://update-bank-kyc-secure.net/login/verify?id=8517",
+      "actor": "PhantomRaven",
+      "malware": "FakeBank APK Stealer"
+    }
+  },
+  {
+    "incident_id": "INC-0009",
+    "campaign_id": "CAM-001",
+    "campaign_name": "State Bank KYC SMS Phishing Syndicate",
+    "channel": "sms",
+    "language": "hinglish",
+    "raw_content": "Aapke account se ₹45,000 deduct hone ki request aayi hai. Agar aapne nahi kiya toh turant cancel karein https://update-bank-kyc-secure.net/login/verify?id=4593 pe ya contact karein +919876543211.",
+    "timestamp": "2026-08-25T11:55:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-001",
+      "impersonation_target": "bank",
+      "tactics": [
+        "urgency_pressure",
+        "authority_impersonation",
+        "credential_harvesting"
+      ],
+      "phone": "+919876543211",
+      "upi": "secure.kyc@paytm",
+      "domain": "update-bank-kyc-secure.net",
+      "url": "https://update-bank-kyc-secure.net/login/verify?id=4593",
+      "actor": "PhantomRaven",
+      "malware": "FakeBank APK Stealer"
+    }
+  },
+  {
+    "incident_id": "INC-0010",
+    "campaign_id": "CAM-001",
+    "campaign_name": "State Bank KYC SMS Phishing Syndicate",
+    "channel": "sms",
+    "language": "english",
+    "raw_content": "ALERT: Unauthorized login attempt detected on your Axis Bank account. To secure your account, send ₹1 verification to UPI secure.kyc@paytm or click https://sbi-kyc-verify-online.com/login/verify?id=7304.",
+    "timestamp": "2026-08-10T03:55:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-001",
+      "impersonation_target": "bank",
+      "tactics": [
+        "urgency_pressure",
+        "authority_impersonation",
+        "credential_harvesting"
+      ],
+      "phone": "+919876543210",
+      "upi": "secure.kyc@paytm",
+      "domain": "sbi-kyc-verify-online.com",
+      "url": "https://sbi-kyc-verify-online.com/login/verify?id=7304",
+      "actor": "PhantomRaven",
+      "malware": "FakeBank APK Stealer"
+    }
+  },
+  {
+    "incident_id": "INC-0011",
+    "campaign_id": "CAM-001",
+    "campaign_name": "State Bank KYC SMS Phishing Syndicate",
+    "channel": "email",
+    "language": "hinglish",
+    "raw_content": "Aapke account se ₹45,000 deduct hone ki request aayi hai. Agar aapne nahi kiya toh turant cancel karein https://update-bank-kyc-secure.net/login/verify?id=2827 pe ya contact karein +919876543210.",
+    "timestamp": "2026-08-02T09:56:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-001",
+      "impersonation_target": "bank",
+      "tactics": [
+        "urgency_pressure",
+        "authority_impersonation",
+        "credential_harvesting"
+      ],
+      "phone": "+919876543210",
+      "upi": "secure.kyc@paytm",
+      "domain": "update-bank-kyc-secure.net",
+      "url": "https://update-bank-kyc-secure.net/login/verify?id=2827",
+      "actor": "PhantomRaven",
+      "malware": "FakeBank APK Stealer"
+    }
+  },
+  {
+    "incident_id": "INC-0012",
+    "campaign_id": "CAM-001",
+    "campaign_name": "State Bank KYC SMS Phishing Syndicate",
+    "channel": "sms",
+    "language": "hindi",
+    "raw_content": "आवश्यक सूचना: आपका ICICI खाता केवाईसी पूरा न होने के कारण आज बंद हो जाएगा। तुरंत https://sbi-kyc-verify-online.com/login/verify?id=3504 पर जाएं या +919876543210 पर संपर्क करें।",
+    "timestamp": "2026-08-31T02:58:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-001",
+      "impersonation_target": "bank",
+      "tactics": [
+        "urgency_pressure",
+        "authority_impersonation",
+        "credential_harvesting"
+      ],
+      "phone": "+919876543210",
+      "upi": "secure.kyc@paytm",
+      "domain": "sbi-kyc-verify-online.com",
+      "url": "https://sbi-kyc-verify-online.com/login/verify?id=3504",
+      "actor": "PhantomRaven",
+      "malware": "FakeBank APK Stealer"
+    }
+  },
+  {
+    "incident_id": "INC-0013",
+    "campaign_id": "CAM-001",
+    "campaign_name": "State Bank KYC SMS Phishing Syndicate",
+    "channel": "sms",
+    "language": "hinglish",
+    "raw_content": "Dear Customer, aapke Paytm Payments Bank debit card reward points ₹7,850 expire ho rahe hain. Redeem karne ke liye visit karein https://sbi-kyc-verify-online.com/login/verify?id=6947 ya UPI sbikyc.verify@okhdfcbank pe check karein.",
+    "timestamp": "2026-08-09T04:05:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-001",
+      "impersonation_target": "bank",
+      "tactics": [
+        "urgency_pressure",
+        "authority_impersonation",
+        "credential_harvesting"
+      ],
+      "phone": "+919876543211",
+      "upi": "sbikyc.verify@okhdfcbank",
+      "domain": "sbi-kyc-verify-online.com",
+      "url": "https://sbi-kyc-verify-online.com/login/verify?id=6947",
+      "actor": "PhantomRaven",
+      "malware": "FakeBank APK Stealer"
+    }
+  },
+  {
+    "incident_id": "INC-0014",
+    "campaign_id": "CAM-001",
+    "campaign_name": "State Bank KYC SMS Phishing Syndicate",
+    "channel": "sms",
+    "language": "hinglish",
+    "raw_content": "Dear Customer, aapke Punjab National Bank debit card reward points ₹7,850 expire ho rahe hain. Redeem karne ke liye visit karein https://sbi-kyc-verify-online.com/login/verify?id=8787 ya UPI sbikyc.verify@okhdfcbank pe check karein.",
+    "timestamp": "2026-08-29T05:27:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-001",
+      "impersonation_target": "bank",
+      "tactics": [
+        "urgency_pressure",
+        "authority_impersonation",
+        "credential_harvesting"
+      ],
+      "phone": "+919876543210",
+      "upi": "sbikyc.verify@okhdfcbank",
+      "domain": "sbi-kyc-verify-online.com",
+      "url": "https://sbi-kyc-verify-online.com/login/verify?id=8787",
+      "actor": "PhantomRaven",
+      "malware": "FakeBank APK Stealer"
+    }
+  },
+  {
+    "incident_id": "INC-0015",
+    "campaign_id": "CAM-001",
+    "campaign_name": "State Bank KYC SMS Phishing Syndicate",
+    "channel": "whatsapp",
+    "language": "hinglish",
+    "raw_content": "Aapke account se ₹45,000 deduct hone ki request aayi hai. Agar aapne nahi kiya toh turant cancel karein https://update-bank-kyc-secure.net/login/verify?id=7118 pe ya contact karein +919876543210.",
+    "timestamp": "2026-08-08T17:04:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-001",
+      "impersonation_target": "bank",
+      "tactics": [
+        "urgency_pressure",
+        "authority_impersonation",
+        "credential_harvesting"
+      ],
+      "phone": "+919876543210",
+      "upi": "secure.kyc@paytm",
+      "domain": "update-bank-kyc-secure.net",
+      "url": "https://update-bank-kyc-secure.net/login/verify?id=7118",
+      "actor": "PhantomRaven",
+      "malware": "FakeBank APK Stealer"
+    }
+  },
+  {
+    "incident_id": "INC-0016",
+    "campaign_id": "CAM-001",
+    "campaign_name": "State Bank KYC SMS Phishing Syndicate",
+    "channel": "whatsapp",
+    "language": "english",
+    "raw_content": "ALERT: Unauthorized login attempt detected on your Kotak Bank account. To secure your account, send ₹1 verification to UPI sbikyc.verify@okhdfcbank or click https://sbi-kyc-verify-online.com/login/verify?id=2163.",
+    "timestamp": "2026-08-29T11:55:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-001",
+      "impersonation_target": "bank",
+      "tactics": [
+        "urgency_pressure",
+        "authority_impersonation",
+        "credential_harvesting"
+      ],
+      "phone": "+919876543210",
+      "upi": "sbikyc.verify@okhdfcbank",
+      "domain": "sbi-kyc-verify-online.com",
+      "url": "https://sbi-kyc-verify-online.com/login/verify?id=2163",
+      "actor": "PhantomRaven",
+      "malware": "FakeBank APK Stealer"
+    }
+  },
+  {
+    "incident_id": "INC-0017",
+    "campaign_id": "CAM-001",
+    "campaign_name": "State Bank KYC SMS Phishing Syndicate",
+    "channel": "whatsapp",
+    "language": "english",
+    "raw_content": "ALERT: Unauthorized login attempt detected on your Punjab National Bank account. To secure your account, send ₹1 verification to UPI secure.kyc@paytm or click https://update-bank-kyc-secure.net/login/verify?id=4510.",
+    "timestamp": "2026-08-27T01:51:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-001",
+      "impersonation_target": "bank",
+      "tactics": [
+        "urgency_pressure",
+        "authority_impersonation",
+        "credential_harvesting"
+      ],
+      "phone": "+919876543210",
+      "upi": "secure.kyc@paytm",
+      "domain": "update-bank-kyc-secure.net",
+      "url": "https://update-bank-kyc-secure.net/login/verify?id=4510",
+      "actor": "PhantomRaven",
+      "malware": "FakeBank APK Stealer"
+    }
+  },
+  {
+    "incident_id": "INC-0018",
+    "campaign_id": "CAM-001",
+    "campaign_name": "State Bank KYC SMS Phishing Syndicate",
+    "channel": "sms",
+    "language": "english",
+    "raw_content": "URGENT: Your Axis Bank account #XX1887 is blocked due to pending KYC verification. Update immediately at https://update-bank-kyc-secure.net/login/verify?id=7939 or call +919876543210 to prevent permanent suspension.",
+    "timestamp": "2026-08-22T06:06:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-001",
+      "impersonation_target": "bank",
+      "tactics": [
+        "urgency_pressure",
+        "authority_impersonation",
+        "credential_harvesting"
+      ],
+      "phone": "+919876543210",
+      "upi": "secure.kyc@paytm",
+      "domain": "update-bank-kyc-secure.net",
+      "url": "https://update-bank-kyc-secure.net/login/verify?id=7939",
+      "actor": "PhantomRaven",
+      "malware": "FakeBank APK Stealer"
+    }
+  },
+  {
+    "incident_id": "INC-0019",
+    "campaign_id": "CAM-001",
+    "campaign_name": "State Bank KYC SMS Phishing Syndicate",
+    "channel": "sms",
+    "language": "hindi",
+    "raw_content": "प्रिय ग्राहक, आपके बैंक खाते में अनधिकृत गतिविधि देखी गई है। सुरक्षित करने के लिए sbikyc.verify@okhdfcbank पर ₹1 भेजकर पुष्टि करें या https://sbi-kyc-verify-online.com/login/verify?id=4116 देखें।",
+    "timestamp": "2026-08-06T18:29:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-001",
+      "impersonation_target": "bank",
+      "tactics": [
+        "urgency_pressure",
+        "authority_impersonation",
+        "credential_harvesting"
+      ],
+      "phone": "+919876543210",
+      "upi": "sbikyc.verify@okhdfcbank",
+      "domain": "sbi-kyc-verify-online.com",
+      "url": "https://sbi-kyc-verify-online.com/login/verify?id=4116",
+      "actor": "PhantomRaven",
+      "malware": "FakeBank APK Stealer"
+    }
+  },
+  {
+    "incident_id": "INC-0020",
+    "campaign_id": "CAM-001",
+    "campaign_name": "State Bank KYC SMS Phishing Syndicate",
+    "channel": "whatsapp",
+    "language": "english",
+    "raw_content": "Dear Customer, your Paytm Payments Bank netbanking services are suspended. Please complete PAN/Aadhaar update at https://sbi-kyc-verify-online.com/login/verify?id=2528. Contact support at +919876543210.",
+    "timestamp": "2026-08-17T01:13:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-001",
+      "impersonation_target": "bank",
+      "tactics": [
+        "urgency_pressure",
+        "authority_impersonation",
+        "credential_harvesting"
+      ],
+      "phone": "+919876543210",
+      "upi": "sbikyc.verify@okhdfcbank",
+      "domain": "sbi-kyc-verify-online.com",
+      "url": "https://sbi-kyc-verify-online.com/login/verify?id=2528",
+      "actor": "PhantomRaven",
+      "malware": "FakeBank APK Stealer"
+    }
+  },
+  {
+    "incident_id": "INC-0021",
+    "campaign_id": "CAM-001",
+    "campaign_name": "State Bank KYC SMS Phishing Syndicate",
+    "channel": "email",
+    "language": "english",
+    "raw_content": "URGENT: Your Paytm Payments Bank account #XX5673 is blocked due to pending KYC verification. Update immediately at https://update-bank-kyc-secure.net/login/verify?id=5345 or call +919876543211 to prevent permanent suspension.",
+    "timestamp": "2026-08-24T09:50:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-001",
+      "impersonation_target": "bank",
+      "tactics": [
+        "urgency_pressure",
+        "authority_impersonation",
+        "credential_harvesting"
+      ],
+      "phone": "+919876543211",
+      "upi": "sbikyc.verify@okhdfcbank",
+      "domain": "update-bank-kyc-secure.net",
+      "url": "https://update-bank-kyc-secure.net/login/verify?id=5345",
+      "actor": "PhantomRaven",
+      "malware": "FakeBank APK Stealer"
+    }
+  },
+  {
+    "incident_id": "INC-0022",
+    "campaign_id": "CAM-001",
+    "campaign_name": "State Bank KYC SMS Phishing Syndicate",
+    "channel": "sms",
+    "language": "hinglish",
+    "raw_content": "Aapke account se ₹45,000 deduct hone ki request aayi hai. Agar aapne nahi kiya toh turant cancel karein https://sbi-kyc-verify-online.com/login/verify?id=5861 pe ya contact karein +919876543211.",
+    "timestamp": "2026-08-24T20:03:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-001",
+      "impersonation_target": "bank",
+      "tactics": [
+        "urgency_pressure",
+        "authority_impersonation",
+        "credential_harvesting"
+      ],
+      "phone": "+919876543211",
+      "upi": "sbikyc.verify@okhdfcbank",
+      "domain": "sbi-kyc-verify-online.com",
+      "url": "https://sbi-kyc-verify-online.com/login/verify?id=5861",
+      "actor": "PhantomRaven",
+      "malware": "FakeBank APK Stealer"
+    }
+  },
+  {
+    "incident_id": "INC-0023",
+    "campaign_id": "CAM-001",
+    "campaign_name": "State Bank KYC SMS Phishing Syndicate",
+    "channel": "sms",
+    "language": "hinglish",
+    "raw_content": "Dear Customer, aapke SBI debit card reward points ₹7,850 expire ho rahe hain. Redeem karne ke liye visit karein https://sbi-kyc-verify-online.com/login/verify?id=4044 ya UPI sbikyc.verify@okhdfcbank pe check karein.",
+    "timestamp": "2026-08-28T17:25:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-001",
+      "impersonation_target": "bank",
+      "tactics": [
+        "urgency_pressure",
+        "authority_impersonation",
+        "credential_harvesting"
+      ],
+      "phone": "+919876543210",
+      "upi": "sbikyc.verify@okhdfcbank",
+      "domain": "sbi-kyc-verify-online.com",
+      "url": "https://sbi-kyc-verify-online.com/login/verify?id=4044",
+      "actor": "PhantomRaven",
+      "malware": "FakeBank APK Stealer"
+    }
+  },
+  {
+    "incident_id": "INC-0024",
+    "campaign_id": "CAM-001",
+    "campaign_name": "State Bank KYC SMS Phishing Syndicate",
+    "channel": "whatsapp",
+    "language": "hinglish",
+    "raw_content": "URGENT ALERT: Aapka ICICI account block ho gaya hai. KYC update karne ke liye turant is link pe click karein: https://update-bank-kyc-secure.net/login/verify?id=9565 ya call karein +919876543210.",
+    "timestamp": "2026-08-23T20:15:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-001",
+      "impersonation_target": "bank",
+      "tactics": [
+        "urgency_pressure",
+        "authority_impersonation",
+        "credential_harvesting"
+      ],
+      "phone": "+919876543210",
+      "upi": "sbikyc.verify@okhdfcbank",
+      "domain": "update-bank-kyc-secure.net",
+      "url": "https://update-bank-kyc-secure.net/login/verify?id=9565",
+      "actor": "PhantomRaven",
+      "malware": "FakeBank APK Stealer"
+    }
+  },
+  {
+    "incident_id": "INC-0025",
+    "campaign_id": "CAM-001",
+    "campaign_name": "State Bank KYC SMS Phishing Syndicate",
+    "channel": "whatsapp",
+    "language": "hindi",
+    "raw_content": "आवश्यक सूचना: आपका SBI खाता केवाईसी पूरा न होने के कारण आज बंद हो जाएगा। तुरंत https://update-bank-kyc-secure.net/login/verify?id=2188 पर जाएं या +919876543211 पर संपर्क करें।",
+    "timestamp": "2026-08-18T16:32:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-001",
+      "impersonation_target": "bank",
+      "tactics": [
+        "urgency_pressure",
+        "authority_impersonation",
+        "credential_harvesting"
+      ],
+      "phone": "+919876543211",
+      "upi": "secure.kyc@paytm",
+      "domain": "update-bank-kyc-secure.net",
+      "url": "https://update-bank-kyc-secure.net/login/verify?id=2188",
+      "actor": "PhantomRaven",
+      "malware": "FakeBank APK Stealer"
+    }
+  },
+  {
+    "incident_id": "INC-0026",
+    "campaign_id": "CAM-001",
+    "campaign_name": "State Bank KYC SMS Phishing Syndicate",
+    "channel": "email",
+    "language": "english",
+    "raw_content": "Dear Customer, your HDFC netbanking services are suspended. Please complete PAN/Aadhaar update at https://update-bank-kyc-secure.net/login/verify?id=5669. Contact support at +919876543210.",
+    "timestamp": "2026-08-11T05:51:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-001",
+      "impersonation_target": "bank",
+      "tactics": [
+        "urgency_pressure",
+        "authority_impersonation",
+        "credential_harvesting"
+      ],
+      "phone": "+919876543210",
+      "upi": "sbikyc.verify@okhdfcbank",
+      "domain": "update-bank-kyc-secure.net",
+      "url": "https://update-bank-kyc-secure.net/login/verify?id=5669",
+      "actor": "PhantomRaven",
+      "malware": "FakeBank APK Stealer"
+    }
+  },
+  {
+    "incident_id": "INC-0027",
+    "campaign_id": "CAM-001",
+    "campaign_name": "State Bank KYC SMS Phishing Syndicate",
+    "channel": "email",
+    "language": "hinglish",
+    "raw_content": "URGENT ALERT: Aapka SBI account block ho gaya hai. KYC update karne ke liye turant is link pe click karein: https://sbi-kyc-verify-online.com/login/verify?id=5333 ya call karein +919876543211.",
+    "timestamp": "2026-08-11T05:13:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-001",
+      "impersonation_target": "bank",
+      "tactics": [
+        "urgency_pressure",
+        "authority_impersonation",
+        "credential_harvesting"
+      ],
+      "phone": "+919876543211",
+      "upi": "sbikyc.verify@okhdfcbank",
+      "domain": "sbi-kyc-verify-online.com",
+      "url": "https://sbi-kyc-verify-online.com/login/verify?id=5333",
+      "actor": "PhantomRaven",
+      "malware": "FakeBank APK Stealer"
+    }
+  },
+  {
+    "incident_id": "INC-0028",
+    "campaign_id": "CAM-001",
+    "campaign_name": "State Bank KYC SMS Phishing Syndicate",
+    "channel": "sms",
+    "language": "hindi",
+    "raw_content": "आवश्यक सूचना: आपका SBI खाता केवाईसी पूरा न होने के कारण आज बंद हो जाएगा। तुरंत https://update-bank-kyc-secure.net/login/verify?id=1832 पर जाएं या +919876543211 पर संपर्क करें।",
+    "timestamp": "2026-08-01T20:49:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-001",
+      "impersonation_target": "bank",
+      "tactics": [
+        "urgency_pressure",
+        "authority_impersonation",
+        "credential_harvesting"
+      ],
+      "phone": "+919876543211",
+      "upi": "secure.kyc@paytm",
+      "domain": "update-bank-kyc-secure.net",
+      "url": "https://update-bank-kyc-secure.net/login/verify?id=1832",
+      "actor": "PhantomRaven",
+      "malware": "FakeBank APK Stealer"
+    }
+  },
+  {
+    "incident_id": "INC-0029",
+    "campaign_id": "CAM-002",
+    "campaign_name": "Electricity Bill Power Disconnection Extortion",
+    "channel": "email",
+    "language": "hinglish",
+    "raw_content": "URGENT: Your SBI account #XX9938 is blocked due to pending KYC verification. Update immediately at https://bill-payment-portal-online.org/login/verify?id=2832 or call +919123456780 to prevent permanent suspension.",
+    "timestamp": "2026-08-27T21:37:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-002",
+      "impersonation_target": "telecom",
+      "tactics": [
+        "urgency_pressure",
+        "authority_pressure",
+        "payment_redirection"
+      ],
+      "phone": "+919123456780",
+      "upi": "powerbill.support@ybl",
+      "domain": "bill-payment-portal-online.org",
+      "url": "https://bill-payment-portal-online.org/login/verify?id=2832",
+      "actor": "VoltScammer",
+      "malware": "QuickSupport Remote Trojan"
+    }
+  },
+  {
+    "incident_id": "INC-0030",
+    "campaign_id": "CAM-002",
+    "campaign_name": "Electricity Bill Power Disconnection Extortion",
+    "channel": "sms",
+    "language": "hindi",
+    "raw_content": "प्रिय उपभोक्ता, आपके पिछले महीने का बिजली बिल अपडेट न होने के कारण आज रात बिजली काट दी जाएगी। तुरंत बिजली अधिकारी +919123456789 से संपर्क करें।",
+    "timestamp": "2026-08-22T17:42:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-002",
+      "impersonation_target": "telecom",
+      "tactics": [
+        "urgency_pressure",
+        "authority_pressure",
+        "payment_redirection"
+      ],
+      "phone": "+919123456789",
+      "upi": "bijlibill.pay@okaxis",
+      "domain": "bill-payment-portal-online.org",
+      "url": "https://bill-payment-portal-online.org/login/verify?id=6974",
+      "actor": "VoltScammer",
+      "malware": "QuickSupport Remote Trojan"
+    }
+  },
+  {
+    "incident_id": "INC-0031",
+    "campaign_id": "CAM-002",
+    "campaign_name": "Electricity Bill Power Disconnection Extortion",
+    "channel": "whatsapp",
+    "language": "hinglish",
+    "raw_content": "ALERT: Unauthorized login attempt detected on your Paytm Payments Bank account. To secure your account, send ₹1 verification to UPI bijlibill.pay@okaxis or click https://bill-payment-portal-online.org/login/verify?id=3662.",
+    "timestamp": "2026-08-07T09:59:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-002",
+      "impersonation_target": "telecom",
+      "tactics": [
+        "urgency_pressure",
+        "authority_pressure",
+        "payment_redirection"
+      ],
+      "phone": "+919123456780",
+      "upi": "bijlibill.pay@okaxis",
+      "domain": "bill-payment-portal-online.org",
+      "url": "https://bill-payment-portal-online.org/login/verify?id=3662",
+      "actor": "VoltScammer",
+      "malware": "QuickSupport Remote Trojan"
+    }
+  },
+  {
+    "incident_id": "INC-0032",
+    "campaign_id": "CAM-002",
+    "campaign_name": "Electricity Bill Power Disconnection Extortion",
+    "channel": "whatsapp",
+    "language": "tamil",
+    "raw_content": "ALERT: Unauthorized login attempt detected on your Axis Bank account. To secure your account, send ₹1 verification to UPI powerbill.support@ybl or click https://bill-payment-portal-online.org/login/verify?id=2771.",
+    "timestamp": "2026-08-08T00:22:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-002",
+      "impersonation_target": "telecom",
+      "tactics": [
+        "urgency_pressure",
+        "authority_pressure",
+        "payment_redirection"
+      ],
+      "phone": "+919123456789",
+      "upi": "powerbill.support@ybl",
+      "domain": "bill-payment-portal-online.org",
+      "url": "https://bill-payment-portal-online.org/login/verify?id=2771",
+      "actor": "VoltScammer",
+      "malware": "QuickSupport Remote Trojan"
+    }
+  },
+  {
+    "incident_id": "INC-0033",
+    "campaign_id": "CAM-002",
+    "campaign_name": "Electricity Bill Power Disconnection Extortion",
+    "channel": "email",
+    "language": "hindi",
+    "raw_content": "प्रिय उपभोक्ता, आपके पिछले महीने का बिजली बिल अपडेट न होने के कारण आज रात बिजली काट दी जाएगी। तुरंत बिजली अधिकारी +919123456789 से संपर्क करें।",
+    "timestamp": "2026-08-22T02:25:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-002",
+      "impersonation_target": "telecom",
+      "tactics": [
+        "urgency_pressure",
+        "authority_pressure",
+        "payment_redirection"
+      ],
+      "phone": "+919123456789",
+      "upi": "bijlibill.pay@okaxis",
+      "domain": "bill-payment-portal-online.org",
+      "url": "https://bill-payment-portal-online.org/login/verify?id=6378",
+      "actor": "VoltScammer",
+      "malware": "QuickSupport Remote Trojan"
+    }
+  },
+  {
+    "incident_id": "INC-0034",
+    "campaign_id": "CAM-002",
+    "campaign_name": "Electricity Bill Power Disconnection Extortion",
+    "channel": "email",
+    "language": "tanglish",
+    "raw_content": "Dear Customer, your Punjab National Bank netbanking services are suspended. Please complete PAN/Aadhaar update at https://bill-payment-portal-online.org/login/verify?id=3925. Contact support at +919123456789.",
+    "timestamp": "2026-08-20T23:22:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-002",
+      "impersonation_target": "telecom",
+      "tactics": [
+        "urgency_pressure",
+        "authority_pressure",
+        "payment_redirection"
+      ],
+      "phone": "+919123456789",
+      "upi": "bijlibill.pay@okaxis",
+      "domain": "bill-payment-portal-online.org",
+      "url": "https://bill-payment-portal-online.org/login/verify?id=3925",
+      "actor": "VoltScammer",
+      "malware": "QuickSupport Remote Trojan"
+    }
+  },
+  {
+    "incident_id": "INC-0035",
+    "campaign_id": "CAM-002",
+    "campaign_name": "Electricity Bill Power Disconnection Extortion",
+    "channel": "email",
+    "language": "hinglish",
+    "raw_content": "Dear Customer, your SBI netbanking services are suspended. Please complete PAN/Aadhaar update at https://bill-payment-portal-online.org/login/verify?id=5173. Contact support at +919123456789.",
+    "timestamp": "2026-08-31T03:43:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-002",
+      "impersonation_target": "telecom",
+      "tactics": [
+        "urgency_pressure",
+        "authority_pressure",
+        "payment_redirection"
+      ],
+      "phone": "+919123456789",
+      "upi": "powerbill.support@ybl",
+      "domain": "bill-payment-portal-online.org",
+      "url": "https://bill-payment-portal-online.org/login/verify?id=5173",
+      "actor": "VoltScammer",
+      "malware": "QuickSupport Remote Trojan"
+    }
+  },
+  {
+    "incident_id": "INC-0036",
+    "campaign_id": "CAM-002",
+    "campaign_name": "Electricity Bill Power Disconnection Extortion",
+    "channel": "whatsapp",
+    "language": "hindi",
+    "raw_content": "प्रिय उपभोक्ता, आपके पिछले महीने का बिजली बिल अपडेट न होने के कारण आज रात बिजली काट दी जाएगी। तुरंत बिजली अधिकारी +919123456780 से संपर्क करें।",
+    "timestamp": "2026-08-11T07:26:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-002",
+      "impersonation_target": "telecom",
+      "tactics": [
+        "urgency_pressure",
+        "authority_pressure",
+        "payment_redirection"
+      ],
+      "phone": "+919123456780",
+      "upi": "bijlibill.pay@okaxis",
+      "domain": "bill-payment-portal-online.org",
+      "url": "https://bill-payment-portal-online.org/login/verify?id=6143",
+      "actor": "VoltScammer",
+      "malware": "QuickSupport Remote Trojan"
+    }
+  },
+  {
+    "incident_id": "INC-0037",
+    "campaign_id": "CAM-002",
+    "campaign_name": "Electricity Bill Power Disconnection Extortion",
+    "channel": "email",
+    "language": "tamil",
+    "raw_content": "ALERT: Unauthorized login attempt detected on your Kotak Bank account. To secure your account, send ₹1 verification to UPI bijlibill.pay@okaxis or click https://bill-payment-portal-online.org/login/verify?id=7888.",
+    "timestamp": "2026-08-19T19:25:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-002",
+      "impersonation_target": "telecom",
+      "tactics": [
+        "urgency_pressure",
+        "authority_pressure",
+        "payment_redirection"
+      ],
+      "phone": "+919123456780",
+      "upi": "bijlibill.pay@okaxis",
+      "domain": "bill-payment-portal-online.org",
+      "url": "https://bill-payment-portal-online.org/login/verify?id=7888",
+      "actor": "VoltScammer",
+      "malware": "QuickSupport Remote Trojan"
+    }
+  },
+  {
+    "incident_id": "INC-0038",
+    "campaign_id": "CAM-002",
+    "campaign_name": "Electricity Bill Power Disconnection Extortion",
+    "channel": "email",
+    "language": "english",
+    "raw_content": "URGENT: Dear Consumer, your electricity power will be disconnected tonight at 9:30 PM due to unpaid bill of previous month. Immediately call officer at +919123456780.",
+    "timestamp": "2026-08-08T02:30:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-002",
+      "impersonation_target": "telecom",
+      "tactics": [
+        "urgency_pressure",
+        "authority_pressure",
+        "payment_redirection"
+      ],
+      "phone": "+919123456780",
+      "upi": "bijlibill.pay@okaxis",
+      "domain": "bill-payment-portal-online.org",
+      "url": "https://bill-payment-portal-online.org/login/verify?id=6279",
+      "actor": "VoltScammer",
+      "malware": "QuickSupport Remote Trojan"
+    }
+  },
+  {
+    "incident_id": "INC-0039",
+    "campaign_id": "CAM-002",
+    "campaign_name": "Electricity Bill Power Disconnection Extortion",
+    "channel": "sms",
+    "language": "hindi",
+    "raw_content": "प्रिय उपभोक्ता, आपके पिछले महीने का बिजली बिल अपडेट न होने के कारण आज रात बिजली काट दी जाएगी। तुरंत बिजली अधिकारी +919123456780 से संपर्क करें।",
+    "timestamp": "2026-08-07T14:01:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-002",
+      "impersonation_target": "telecom",
+      "tactics": [
+        "urgency_pressure",
+        "authority_pressure",
+        "payment_redirection"
+      ],
+      "phone": "+919123456780",
+      "upi": "powerbill.support@ybl",
+      "domain": "bill-payment-portal-online.org",
+      "url": "https://bill-payment-portal-online.org/login/verify?id=4848",
+      "actor": "VoltScammer",
+      "malware": "QuickSupport Remote Trojan"
+    }
+  },
+  {
+    "incident_id": "INC-0040",
+    "campaign_id": "CAM-002",
+    "campaign_name": "Electricity Bill Power Disconnection Extortion",
+    "channel": "email",
+    "language": "hindi",
+    "raw_content": "प्रिय उपभोक्ता, आपके पिछले महीने का बिजली बिल अपडेट न होने के कारण आज रात बिजली काट दी जाएगी। तुरंत बिजली अधिकारी +919123456789 से संपर्क करें।",
+    "timestamp": "2026-08-08T14:41:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-002",
+      "impersonation_target": "telecom",
+      "tactics": [
+        "urgency_pressure",
+        "authority_pressure",
+        "payment_redirection"
+      ],
+      "phone": "+919123456789",
+      "upi": "powerbill.support@ybl",
+      "domain": "bill-payment-portal-online.org",
+      "url": "https://bill-payment-portal-online.org/login/verify?id=4185",
+      "actor": "VoltScammer",
+      "malware": "QuickSupport Remote Trojan"
+    }
+  },
+  {
+    "incident_id": "INC-0041",
+    "campaign_id": "CAM-002",
+    "campaign_name": "Electricity Bill Power Disconnection Extortion",
+    "channel": "whatsapp",
+    "language": "english",
+    "raw_content": "URGENT: Dear Consumer, your electricity power will be disconnected tonight at 9:30 PM due to unpaid bill of previous month. Immediately call officer at +919123456780.",
+    "timestamp": "2026-08-05T00:08:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-002",
+      "impersonation_target": "telecom",
+      "tactics": [
+        "urgency_pressure",
+        "authority_pressure",
+        "payment_redirection"
+      ],
+      "phone": "+919123456780",
+      "upi": "bijlibill.pay@okaxis",
+      "domain": "bill-payment-portal-online.org",
+      "url": "https://bill-payment-portal-online.org/login/verify?id=9486",
+      "actor": "VoltScammer",
+      "malware": "QuickSupport Remote Trojan"
+    }
+  },
+  {
+    "incident_id": "INC-0042",
+    "campaign_id": "CAM-002",
+    "campaign_name": "Electricity Bill Power Disconnection Extortion",
+    "channel": "email",
+    "language": "tanglish",
+    "raw_content": "ALERT: Unauthorized login attempt detected on your Axis Bank account. To secure your account, send ₹1 verification to UPI powerbill.support@ybl or click https://bill-payment-portal-online.org/login/verify?id=9976.",
+    "timestamp": "2026-08-09T17:53:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-002",
+      "impersonation_target": "telecom",
+      "tactics": [
+        "urgency_pressure",
+        "authority_pressure",
+        "payment_redirection"
+      ],
+      "phone": "+919123456780",
+      "upi": "powerbill.support@ybl",
+      "domain": "bill-payment-portal-online.org",
+      "url": "https://bill-payment-portal-online.org/login/verify?id=9976",
+      "actor": "VoltScammer",
+      "malware": "QuickSupport Remote Trojan"
+    }
+  },
+  {
+    "incident_id": "INC-0043",
+    "campaign_id": "CAM-002",
+    "campaign_name": "Electricity Bill Power Disconnection Extortion",
+    "channel": "email",
+    "language": "hinglish",
+    "raw_content": "ALERT: Unauthorized login attempt detected on your SBI account. To secure your account, send ₹1 verification to UPI bijlibill.pay@okaxis or click https://bill-payment-portal-online.org/login/verify?id=8206.",
+    "timestamp": "2026-08-11T20:57:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-002",
+      "impersonation_target": "telecom",
+      "tactics": [
+        "urgency_pressure",
+        "authority_pressure",
+        "payment_redirection"
+      ],
+      "phone": "+919123456780",
+      "upi": "bijlibill.pay@okaxis",
+      "domain": "bill-payment-portal-online.org",
+      "url": "https://bill-payment-portal-online.org/login/verify?id=8206",
+      "actor": "VoltScammer",
+      "malware": "QuickSupport Remote Trojan"
+    }
+  },
+  {
+    "incident_id": "INC-0044",
+    "campaign_id": "CAM-002",
+    "campaign_name": "Electricity Bill Power Disconnection Extortion",
+    "channel": "whatsapp",
+    "language": "english",
+    "raw_content": "URGENT: Dear Consumer, your electricity power will be disconnected tonight at 9:30 PM due to unpaid bill of previous month. Immediately call officer at +919123456789.",
+    "timestamp": "2026-08-14T20:34:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-002",
+      "impersonation_target": "telecom",
+      "tactics": [
+        "urgency_pressure",
+        "authority_pressure",
+        "payment_redirection"
+      ],
+      "phone": "+919123456789",
+      "upi": "bijlibill.pay@okaxis",
+      "domain": "bill-payment-portal-online.org",
+      "url": "https://bill-payment-portal-online.org/login/verify?id=3503",
+      "actor": "VoltScammer",
+      "malware": "QuickSupport Remote Trojan"
+    }
+  },
+  {
+    "incident_id": "INC-0045",
+    "campaign_id": "CAM-002",
+    "campaign_name": "Electricity Bill Power Disconnection Extortion",
+    "channel": "whatsapp",
+    "language": "tamil",
+    "raw_content": "URGENT: Your Paytm Payments Bank account #XX7232 is blocked due to pending KYC verification. Update immediately at https://bill-payment-portal-online.org/login/verify?id=1320 or call +919123456789 to prevent permanent suspension.",
+    "timestamp": "2026-08-01T21:19:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-002",
+      "impersonation_target": "telecom",
+      "tactics": [
+        "urgency_pressure",
+        "authority_pressure",
+        "payment_redirection"
+      ],
+      "phone": "+919123456789",
+      "upi": "powerbill.support@ybl",
+      "domain": "bill-payment-portal-online.org",
+      "url": "https://bill-payment-portal-online.org/login/verify?id=1320",
+      "actor": "VoltScammer",
+      "malware": "QuickSupport Remote Trojan"
+    }
+  },
+  {
+    "incident_id": "INC-0046",
+    "campaign_id": "CAM-002",
+    "campaign_name": "Electricity Bill Power Disconnection Extortion",
+    "channel": "whatsapp",
+    "language": "tamil",
+    "raw_content": "ALERT: Unauthorized login attempt detected on your Axis Bank account. To secure your account, send ₹1 verification to UPI powerbill.support@ybl or click https://bill-payment-portal-online.org/login/verify?id=5471.",
+    "timestamp": "2026-08-12T07:43:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-002",
+      "impersonation_target": "telecom",
+      "tactics": [
+        "urgency_pressure",
+        "authority_pressure",
+        "payment_redirection"
+      ],
+      "phone": "+919123456789",
+      "upi": "powerbill.support@ybl",
+      "domain": "bill-payment-portal-online.org",
+      "url": "https://bill-payment-portal-online.org/login/verify?id=5471",
+      "actor": "VoltScammer",
+      "malware": "QuickSupport Remote Trojan"
+    }
+  },
+  {
+    "incident_id": "INC-0047",
+    "campaign_id": "CAM-002",
+    "campaign_name": "Electricity Bill Power Disconnection Extortion",
+    "channel": "whatsapp",
+    "language": "hindi",
+    "raw_content": "प्रिय उपभोक्ता, आपके पिछले महीने का बिजली बिल अपडेट न होने के कारण आज रात बिजली काट दी जाएगी। तुरंत बिजली अधिकारी +919123456789 से संपर्क करें।",
+    "timestamp": "2026-08-06T11:16:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-002",
+      "impersonation_target": "telecom",
+      "tactics": [
+        "urgency_pressure",
+        "authority_pressure",
+        "payment_redirection"
+      ],
+      "phone": "+919123456789",
+      "upi": "bijlibill.pay@okaxis",
+      "domain": "bill-payment-portal-online.org",
+      "url": "https://bill-payment-portal-online.org/login/verify?id=1444",
+      "actor": "VoltScammer",
+      "malware": "QuickSupport Remote Trojan"
+    }
+  },
+  {
+    "incident_id": "INC-0048",
+    "campaign_id": "CAM-002",
+    "campaign_name": "Electricity Bill Power Disconnection Extortion",
+    "channel": "email",
+    "language": "hinglish",
+    "raw_content": "URGENT: Your ICICI account #XX5133 is blocked due to pending KYC verification. Update immediately at https://bill-payment-portal-online.org/login/verify?id=7211 or call +919123456780 to prevent permanent suspension.",
+    "timestamp": "2026-08-04T01:01:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-002",
+      "impersonation_target": "telecom",
+      "tactics": [
+        "urgency_pressure",
+        "authority_pressure",
+        "payment_redirection"
+      ],
+      "phone": "+919123456780",
+      "upi": "powerbill.support@ybl",
+      "domain": "bill-payment-portal-online.org",
+      "url": "https://bill-payment-portal-online.org/login/verify?id=7211",
+      "actor": "VoltScammer",
+      "malware": "QuickSupport Remote Trojan"
+    }
+  },
+  {
+    "incident_id": "INC-0049",
+    "campaign_id": "CAM-002",
+    "campaign_name": "Electricity Bill Power Disconnection Extortion",
+    "channel": "sms",
+    "language": "tanglish",
+    "raw_content": "URGENT: Your Paytm Payments Bank account #XX5051 is blocked due to pending KYC verification. Update immediately at https://bill-payment-portal-online.org/login/verify?id=1659 or call +919123456780 to prevent permanent suspension.",
+    "timestamp": "2026-08-27T10:39:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-002",
+      "impersonation_target": "telecom",
+      "tactics": [
+        "urgency_pressure",
+        "authority_pressure",
+        "payment_redirection"
+      ],
+      "phone": "+919123456780",
+      "upi": "bijlibill.pay@okaxis",
+      "domain": "bill-payment-portal-online.org",
+      "url": "https://bill-payment-portal-online.org/login/verify?id=1659",
+      "actor": "VoltScammer",
+      "malware": "QuickSupport Remote Trojan"
+    }
+  },
+  {
+    "incident_id": "INC-0050",
+    "campaign_id": "CAM-002",
+    "campaign_name": "Electricity Bill Power Disconnection Extortion",
+    "channel": "email",
+    "language": "hindi",
+    "raw_content": "प्रिय उपभोक्ता, आपके पिछले महीने का बिजली बिल अपडेट न होने के कारण आज रात बिजली काट दी जाएगी। तुरंत बिजली अधिकारी +919123456780 से संपर्क करें।",
+    "timestamp": "2026-08-21T05:47:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-002",
+      "impersonation_target": "telecom",
+      "tactics": [
+        "urgency_pressure",
+        "authority_pressure",
+        "payment_redirection"
+      ],
+      "phone": "+919123456780",
+      "upi": "bijlibill.pay@okaxis",
+      "domain": "bill-payment-portal-online.org",
+      "url": "https://bill-payment-portal-online.org/login/verify?id=8619",
+      "actor": "VoltScammer",
+      "malware": "QuickSupport Remote Trojan"
+    }
+  },
+  {
+    "incident_id": "INC-0051",
+    "campaign_id": "CAM-003",
+    "campaign_name": "Postal Courier Redelivery Fee Harvester",
+    "channel": "email",
+    "language": "english",
+    "raw_content": "Important: Your parcel #IN849747P from DTDC cannot be delivered due to incorrect address. Pay ₹25 redelivery fee at indiapost.redelivery@icici or visit https://indiapost-tracking-update.com/login/verify?id=6111.",
+    "timestamp": "2026-08-07T12:37:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-003",
+      "impersonation_target": "delivery_courier",
+      "tactics": [
+        "artificial_scarcity",
+        "trust_building",
+        "payment_redirection"
+      ],
+      "phone": "+919988776654",
+      "upi": "indiapost.redelivery@icici",
+      "domain": "indiapost-tracking-update.com",
+      "url": "https://indiapost-tracking-update.com/login/verify?id=6111",
+      "actor": "CourierJackal",
+      "malware": "SmsForwarder Spyware"
+    }
+  },
+  {
+    "incident_id": "INC-0052",
+    "campaign_id": "CAM-003",
+    "campaign_name": "Postal Courier Redelivery Fee Harvester",
+    "channel": "email",
+    "language": "tanglish",
+    "raw_content": "URGENT: Your ICICI account #XX8018 is blocked due to pending KYC verification. Update immediately at https://indiapost-tracking-update.com/login/verify?id=1672 or call +919988776655 to prevent permanent suspension.",
+    "timestamp": "2026-08-12T12:32:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-003",
+      "impersonation_target": "delivery_courier",
+      "tactics": [
+        "artificial_scarcity",
+        "trust_building",
+        "payment_redirection"
+      ],
+      "phone": "+919988776655",
+      "upi": "customs.fee@apl",
+      "domain": "indiapost-tracking-update.com",
+      "url": "https://indiapost-tracking-update.com/login/verify?id=1672",
+      "actor": "CourierJackal",
+      "malware": "SmsForwarder Spyware"
+    }
+  },
+  {
+    "incident_id": "INC-0053",
+    "campaign_id": "CAM-003",
+    "campaign_name": "Postal Courier Redelivery Fee Harvester",
+    "channel": "email",
+    "language": "hinglish",
+    "raw_content": "Aapka parcel deliver nahi ho paya. Redelivery charge ₹15 pay karein is UPI id pe: customs.fee@apl ya address update karein https://indiapost-tracking-update.com/login/verify?id=8102 pe.",
+    "timestamp": "2026-08-07T09:33:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-003",
+      "impersonation_target": "delivery_courier",
+      "tactics": [
+        "artificial_scarcity",
+        "trust_building",
+        "payment_redirection"
+      ],
+      "phone": "+919988776654",
+      "upi": "customs.fee@apl",
+      "domain": "indiapost-tracking-update.com",
+      "url": "https://indiapost-tracking-update.com/login/verify?id=8102",
+      "actor": "CourierJackal",
+      "malware": "SmsForwarder Spyware"
+    }
+  },
+  {
+    "incident_id": "INC-0054",
+    "campaign_id": "CAM-003",
+    "campaign_name": "Postal Courier Redelivery Fee Harvester",
+    "channel": "whatsapp",
+    "language": "hinglish",
+    "raw_content": "Aapka parcel deliver nahi ho paya. Redelivery charge ₹15 pay karein is UPI id pe: customs.fee@apl ya address update karein https://courier-redelivery-hub.info/login/verify?id=6280 pe.",
+    "timestamp": "2026-08-30T00:15:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-003",
+      "impersonation_target": "delivery_courier",
+      "tactics": [
+        "artificial_scarcity",
+        "trust_building",
+        "payment_redirection"
+      ],
+      "phone": "+919988776654",
+      "upi": "customs.fee@apl",
+      "domain": "courier-redelivery-hub.info",
+      "url": "https://courier-redelivery-hub.info/login/verify?id=6280",
+      "actor": "CourierJackal",
+      "malware": "SmsForwarder Spyware"
+    }
+  },
+  {
+    "incident_id": "INC-0055",
+    "campaign_id": "CAM-003",
+    "campaign_name": "Postal Courier Redelivery Fee Harvester",
+    "channel": "whatsapp",
+    "language": "tanglish",
+    "raw_content": "ALERT: Unauthorized login attempt detected on your Paytm Payments Bank account. To secure your account, send ₹1 verification to UPI customs.fee@apl or click https://indiapost-tracking-update.com/login/verify?id=9098.",
+    "timestamp": "2026-08-07T21:51:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-003",
+      "impersonation_target": "delivery_courier",
+      "tactics": [
+        "artificial_scarcity",
+        "trust_building",
+        "payment_redirection"
+      ],
+      "phone": "+919988776654",
+      "upi": "customs.fee@apl",
+      "domain": "indiapost-tracking-update.com",
+      "url": "https://indiapost-tracking-update.com/login/verify?id=9098",
+      "actor": "CourierJackal",
+      "malware": "SmsForwarder Spyware"
+    }
+  },
+  {
+    "incident_id": "INC-0056",
+    "campaign_id": "CAM-003",
+    "campaign_name": "Postal Courier Redelivery Fee Harvester",
+    "channel": "whatsapp",
+    "language": "hinglish",
+    "raw_content": "Aapka parcel deliver nahi ho paya. Redelivery charge ₹15 pay karein is UPI id pe: indiapost.redelivery@icici ya address update karein https://indiapost-tracking-update.com/login/verify?id=2402 pe.",
+    "timestamp": "2026-08-25T17:44:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-003",
+      "impersonation_target": "delivery_courier",
+      "tactics": [
+        "artificial_scarcity",
+        "trust_building",
+        "payment_redirection"
+      ],
+      "phone": "+919988776654",
+      "upi": "indiapost.redelivery@icici",
+      "domain": "indiapost-tracking-update.com",
+      "url": "https://indiapost-tracking-update.com/login/verify?id=2402",
+      "actor": "CourierJackal",
+      "malware": "SmsForwarder Spyware"
+    }
+  },
+  {
+    "incident_id": "INC-0057",
+    "campaign_id": "CAM-003",
+    "campaign_name": "Postal Courier Redelivery Fee Harvester",
+    "channel": "email",
+    "language": "tanglish",
+    "raw_content": "ALERT: Unauthorized login attempt detected on your ICICI account. To secure your account, send ₹1 verification to UPI customs.fee@apl or click https://indiapost-tracking-update.com/login/verify?id=2524.",
+    "timestamp": "2026-08-08T19:42:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-003",
+      "impersonation_target": "delivery_courier",
+      "tactics": [
+        "artificial_scarcity",
+        "trust_building",
+        "payment_redirection"
+      ],
+      "phone": "+919988776654",
+      "upi": "customs.fee@apl",
+      "domain": "indiapost-tracking-update.com",
+      "url": "https://indiapost-tracking-update.com/login/verify?id=2524",
+      "actor": "CourierJackal",
+      "malware": "SmsForwarder Spyware"
+    }
+  },
+  {
+    "incident_id": "INC-0058",
+    "campaign_id": "CAM-003",
+    "campaign_name": "Postal Courier Redelivery Fee Harvester",
+    "channel": "email",
+    "language": "hinglish",
+    "raw_content": "Aapka parcel deliver nahi ho paya. Redelivery charge ₹15 pay karein is UPI id pe: customs.fee@apl ya address update karein https://courier-redelivery-hub.info/login/verify?id=6764 pe.",
+    "timestamp": "2026-08-09T17:07:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-003",
+      "impersonation_target": "delivery_courier",
+      "tactics": [
+        "artificial_scarcity",
+        "trust_building",
+        "payment_redirection"
+      ],
+      "phone": "+919988776654",
+      "upi": "customs.fee@apl",
+      "domain": "courier-redelivery-hub.info",
+      "url": "https://courier-redelivery-hub.info/login/verify?id=6764",
+      "actor": "CourierJackal",
+      "malware": "SmsForwarder Spyware"
+    }
+  },
+  {
+    "incident_id": "INC-0059",
+    "campaign_id": "CAM-003",
+    "campaign_name": "Postal Courier Redelivery Fee Harvester",
+    "channel": "whatsapp",
+    "language": "english",
+    "raw_content": "DTDC Alert: Package delayed at customs. Contact delivery agent at +919988776655 or update address at https://indiapost-tracking-update.com/login/verify?id=4545 within 24 hours.",
+    "timestamp": "2026-08-20T02:38:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-003",
+      "impersonation_target": "delivery_courier",
+      "tactics": [
+        "artificial_scarcity",
+        "trust_building",
+        "payment_redirection"
+      ],
+      "phone": "+919988776655",
+      "upi": "indiapost.redelivery@icici",
+      "domain": "indiapost-tracking-update.com",
+      "url": "https://indiapost-tracking-update.com/login/verify?id=4545",
+      "actor": "CourierJackal",
+      "malware": "SmsForwarder Spyware"
+    }
+  },
+  {
+    "incident_id": "INC-0060",
+    "campaign_id": "CAM-003",
+    "campaign_name": "Postal Courier Redelivery Fee Harvester",
+    "channel": "email",
+    "language": "english",
+    "raw_content": "Important: Your parcel #IN232731P from IndiaPost cannot be delivered due to incorrect address. Pay ₹25 redelivery fee at indiapost.redelivery@icici or visit https://courier-redelivery-hub.info/login/verify?id=3939.",
+    "timestamp": "2026-08-09T11:03:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-003",
+      "impersonation_target": "delivery_courier",
+      "tactics": [
+        "artificial_scarcity",
+        "trust_building",
+        "payment_redirection"
+      ],
+      "phone": "+919988776654",
+      "upi": "indiapost.redelivery@icici",
+      "domain": "courier-redelivery-hub.info",
+      "url": "https://courier-redelivery-hub.info/login/verify?id=3939",
+      "actor": "CourierJackal",
+      "malware": "SmsForwarder Spyware"
+    }
+  },
+  {
+    "incident_id": "INC-0061",
+    "campaign_id": "CAM-003",
+    "campaign_name": "Postal Courier Redelivery Fee Harvester",
+    "channel": "whatsapp",
+    "language": "hinglish",
+    "raw_content": "Aapka parcel deliver nahi ho paya. Redelivery charge ₹15 pay karein is UPI id pe: indiapost.redelivery@icici ya address update karein https://indiapost-tracking-update.com/login/verify?id=5658 pe.",
+    "timestamp": "2026-08-06T11:16:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-003",
+      "impersonation_target": "delivery_courier",
+      "tactics": [
+        "artificial_scarcity",
+        "trust_building",
+        "payment_redirection"
+      ],
+      "phone": "+919988776654",
+      "upi": "indiapost.redelivery@icici",
+      "domain": "indiapost-tracking-update.com",
+      "url": "https://indiapost-tracking-update.com/login/verify?id=5658",
+      "actor": "CourierJackal",
+      "malware": "SmsForwarder Spyware"
+    }
+  },
+  {
+    "incident_id": "INC-0062",
+    "campaign_id": "CAM-003",
+    "campaign_name": "Postal Courier Redelivery Fee Harvester",
+    "channel": "whatsapp",
+    "language": "english",
+    "raw_content": "Important: Your parcel #IN189318P from BlueDart cannot be delivered due to incorrect address. Pay ₹25 redelivery fee at customs.fee@apl or visit https://indiapost-tracking-update.com/login/verify?id=1878.",
+    "timestamp": "2026-08-08T13:35:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-003",
+      "impersonation_target": "delivery_courier",
+      "tactics": [
+        "artificial_scarcity",
+        "trust_building",
+        "payment_redirection"
+      ],
+      "phone": "+919988776654",
+      "upi": "customs.fee@apl",
+      "domain": "indiapost-tracking-update.com",
+      "url": "https://indiapost-tracking-update.com/login/verify?id=1878",
+      "actor": "CourierJackal",
+      "malware": "SmsForwarder Spyware"
+    }
+  },
+  {
+    "incident_id": "INC-0063",
+    "campaign_id": "CAM-003",
+    "campaign_name": "Postal Courier Redelivery Fee Harvester",
+    "channel": "email",
+    "language": "tanglish",
+    "raw_content": "ALERT: Unauthorized login attempt detected on your ICICI account. To secure your account, send ₹1 verification to UPI customs.fee@apl or click https://courier-redelivery-hub.info/login/verify?id=8253.",
+    "timestamp": "2026-08-20T05:03:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-003",
+      "impersonation_target": "delivery_courier",
+      "tactics": [
+        "artificial_scarcity",
+        "trust_building",
+        "payment_redirection"
+      ],
+      "phone": "+919988776655",
+      "upi": "customs.fee@apl",
+      "domain": "courier-redelivery-hub.info",
+      "url": "https://courier-redelivery-hub.info/login/verify?id=8253",
+      "actor": "CourierJackal",
+      "malware": "SmsForwarder Spyware"
+    }
+  },
+  {
+    "incident_id": "INC-0064",
+    "campaign_id": "CAM-003",
+    "campaign_name": "Postal Courier Redelivery Fee Harvester",
+    "channel": "whatsapp",
+    "language": "tanglish",
+    "raw_content": "URGENT: Your HDFC account #XX3847 is blocked due to pending KYC verification. Update immediately at https://courier-redelivery-hub.info/login/verify?id=2330 or call +919988776655 to prevent permanent suspension.",
+    "timestamp": "2026-08-03T15:00:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-003",
+      "impersonation_target": "delivery_courier",
+      "tactics": [
+        "artificial_scarcity",
+        "trust_building",
+        "payment_redirection"
+      ],
+      "phone": "+919988776655",
+      "upi": "indiapost.redelivery@icici",
+      "domain": "courier-redelivery-hub.info",
+      "url": "https://courier-redelivery-hub.info/login/verify?id=2330",
+      "actor": "CourierJackal",
+      "malware": "SmsForwarder Spyware"
+    }
+  },
+  {
+    "incident_id": "INC-0065",
+    "campaign_id": "CAM-003",
+    "campaign_name": "Postal Courier Redelivery Fee Harvester",
+    "channel": "whatsapp",
+    "language": "hinglish",
+    "raw_content": "Aapka parcel deliver nahi ho paya. Redelivery charge ₹15 pay karein is UPI id pe: indiapost.redelivery@icici ya address update karein https://indiapost-tracking-update.com/login/verify?id=5720 pe.",
+    "timestamp": "2026-08-22T17:59:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-003",
+      "impersonation_target": "delivery_courier",
+      "tactics": [
+        "artificial_scarcity",
+        "trust_building",
+        "payment_redirection"
+      ],
+      "phone": "+919988776654",
+      "upi": "indiapost.redelivery@icici",
+      "domain": "indiapost-tracking-update.com",
+      "url": "https://indiapost-tracking-update.com/login/verify?id=5720",
+      "actor": "CourierJackal",
+      "malware": "SmsForwarder Spyware"
+    }
+  },
+  {
+    "incident_id": "INC-0066",
+    "campaign_id": "CAM-003",
+    "campaign_name": "Postal Courier Redelivery Fee Harvester",
+    "channel": "sms",
+    "language": "tanglish",
+    "raw_content": "ALERT: Unauthorized login attempt detected on your HDFC account. To secure your account, send ₹1 verification to UPI customs.fee@apl or click https://indiapost-tracking-update.com/login/verify?id=9922.",
+    "timestamp": "2026-08-05T12:03:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-003",
+      "impersonation_target": "delivery_courier",
+      "tactics": [
+        "artificial_scarcity",
+        "trust_building",
+        "payment_redirection"
+      ],
+      "phone": "+919988776655",
+      "upi": "customs.fee@apl",
+      "domain": "indiapost-tracking-update.com",
+      "url": "https://indiapost-tracking-update.com/login/verify?id=9922",
+      "actor": "CourierJackal",
+      "malware": "SmsForwarder Spyware"
+    }
+  },
+  {
+    "incident_id": "INC-0067",
+    "campaign_id": "CAM-003",
+    "campaign_name": "Postal Courier Redelivery Fee Harvester",
+    "channel": "sms",
+    "language": "hinglish",
+    "raw_content": "Aapka parcel deliver nahi ho paya. Redelivery charge ₹15 pay karein is UPI id pe: indiapost.redelivery@icici ya address update karein https://courier-redelivery-hub.info/login/verify?id=5982 pe.",
+    "timestamp": "2026-08-19T01:28:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-003",
+      "impersonation_target": "delivery_courier",
+      "tactics": [
+        "artificial_scarcity",
+        "trust_building",
+        "payment_redirection"
+      ],
+      "phone": "+919988776654",
+      "upi": "indiapost.redelivery@icici",
+      "domain": "courier-redelivery-hub.info",
+      "url": "https://courier-redelivery-hub.info/login/verify?id=5982",
+      "actor": "CourierJackal",
+      "malware": "SmsForwarder Spyware"
+    }
+  },
+  {
+    "incident_id": "INC-0068",
+    "campaign_id": "CAM-003",
+    "campaign_name": "Postal Courier Redelivery Fee Harvester",
+    "channel": "sms",
+    "language": "tanglish",
+    "raw_content": "URGENT: Your SBI account #XX1339 is blocked due to pending KYC verification. Update immediately at https://courier-redelivery-hub.info/login/verify?id=1423 or call +919988776654 to prevent permanent suspension.",
+    "timestamp": "2026-08-22T18:36:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-003",
+      "impersonation_target": "delivery_courier",
+      "tactics": [
+        "artificial_scarcity",
+        "trust_building",
+        "payment_redirection"
+      ],
+      "phone": "+919988776654",
+      "upi": "customs.fee@apl",
+      "domain": "courier-redelivery-hub.info",
+      "url": "https://courier-redelivery-hub.info/login/verify?id=1423",
+      "actor": "CourierJackal",
+      "malware": "SmsForwarder Spyware"
+    }
+  },
+  {
+    "incident_id": "INC-0069",
+    "campaign_id": "CAM-003",
+    "campaign_name": "Postal Courier Redelivery Fee Harvester",
+    "channel": "whatsapp",
+    "language": "english",
+    "raw_content": "DTDC Alert: Package delayed at customs. Contact delivery agent at +919988776654 or update address at https://indiapost-tracking-update.com/login/verify?id=8141 within 24 hours.",
+    "timestamp": "2026-08-12T23:21:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-003",
+      "impersonation_target": "delivery_courier",
+      "tactics": [
+        "artificial_scarcity",
+        "trust_building",
+        "payment_redirection"
+      ],
+      "phone": "+919988776654",
+      "upi": "customs.fee@apl",
+      "domain": "indiapost-tracking-update.com",
+      "url": "https://indiapost-tracking-update.com/login/verify?id=8141",
+      "actor": "CourierJackal",
+      "malware": "SmsForwarder Spyware"
+    }
+  },
+  {
+    "incident_id": "INC-0070",
+    "campaign_id": "CAM-003",
+    "campaign_name": "Postal Courier Redelivery Fee Harvester",
+    "channel": "whatsapp",
+    "language": "tanglish",
+    "raw_content": "URGENT: Your ICICI account #XX1601 is blocked due to pending KYC verification. Update immediately at https://courier-redelivery-hub.info/login/verify?id=9117 or call +919988776655 to prevent permanent suspension.",
+    "timestamp": "2026-08-03T20:16:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-003",
+      "impersonation_target": "delivery_courier",
+      "tactics": [
+        "artificial_scarcity",
+        "trust_building",
+        "payment_redirection"
+      ],
+      "phone": "+919988776655",
+      "upi": "customs.fee@apl",
+      "domain": "courier-redelivery-hub.info",
+      "url": "https://courier-redelivery-hub.info/login/verify?id=9117",
+      "actor": "CourierJackal",
+      "malware": "SmsForwarder Spyware"
+    }
+  },
+  {
+    "incident_id": "INC-0071",
+    "campaign_id": "CAM-004",
+    "campaign_name": "Telegram App-Rating Work-From-Home Task Fraud",
+    "channel": "whatsapp",
+    "language": "english",
+    "raw_content": "Work from home daily earning ₹3000-₹8000 by rating apps. Message our recruiter at +918877665544 to join our Telegram group.",
+    "timestamp": "2026-08-26T01:40:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-004",
+      "impersonation_target": "employer",
+      "tactics": [
+        "trust_building",
+        "isolation_tactic",
+        "payment_redirection"
+      ],
+      "phone": "+918877665544",
+      "upi": "merchant.fund@paytm",
+      "domain": "app-review-wealth.com",
+      "url": "https://app-review-wealth.com/login/verify?id=1888",
+      "actor": "SilkTiger Syndicate",
+      "malware": "None"
+    }
+  },
+  {
+    "incident_id": "INC-0072",
+    "campaign_id": "CAM-004",
+    "campaign_name": "Telegram App-Rating Work-From-Home Task Fraud",
+    "channel": "sms",
+    "language": "english",
+    "raw_content": "Congratulations! You are shortlisted for Part-Time Assistant role earning ₹50,000/month. Contact HR on WhatsApp at +918877665533 or visit https://app-review-wealth.com/login/verify?id=8178.",
+    "timestamp": "2026-08-22T05:51:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-004",
+      "impersonation_target": "employer",
+      "tactics": [
+        "trust_building",
+        "isolation_tactic",
+        "payment_redirection"
+      ],
+      "phone": "+918877665533",
+      "upi": "taskreward.vip@okaxis",
+      "domain": "app-review-wealth.com",
+      "url": "https://app-review-wealth.com/login/verify?id=8178",
+      "actor": "SilkTiger Syndicate",
+      "malware": "None"
+    }
+  },
+  {
+    "incident_id": "INC-0073",
+    "campaign_id": "CAM-004",
+    "campaign_name": "Telegram App-Rating Work-From-Home Task Fraud",
+    "channel": "email",
+    "language": "tanglish",
+    "raw_content": "Part time job opportunity daily 2 hours work ₹2000-₹5000 earn pannalam. WhatsApp pannunga +918877665533 or register https://app-review-wealth.com/login/verify?id=2527.",
+    "timestamp": "2026-08-21T14:31:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-004",
+      "impersonation_target": "employer",
+      "tactics": [
+        "trust_building",
+        "isolation_tactic",
+        "payment_redirection"
+      ],
+      "phone": "+918877665533",
+      "upi": "taskreward.vip@okaxis",
+      "domain": "app-review-wealth.com",
+      "url": "https://app-review-wealth.com/login/verify?id=2527",
+      "actor": "SilkTiger Syndicate",
+      "malware": "None"
+    }
+  },
+  {
+    "incident_id": "INC-0074",
+    "campaign_id": "CAM-004",
+    "campaign_name": "Telegram App-Rating Work-From-Home Task Fraud",
+    "channel": "email",
+    "language": "hinglish",
+    "raw_content": "ALERT: Unauthorized login attempt detected on your HDFC account. To secure your account, send ₹1 verification to UPI merchant.fund@paytm or click https://app-review-wealth.com/login/verify?id=8736.",
+    "timestamp": "2026-08-08T05:32:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-004",
+      "impersonation_target": "employer",
+      "tactics": [
+        "trust_building",
+        "isolation_tactic",
+        "payment_redirection"
+      ],
+      "phone": "+918877665533",
+      "upi": "merchant.fund@paytm",
+      "domain": "app-review-wealth.com",
+      "url": "https://app-review-wealth.com/login/verify?id=8736",
+      "actor": "SilkTiger Syndicate",
+      "malware": "None"
+    }
+  },
+  {
+    "incident_id": "INC-0075",
+    "campaign_id": "CAM-004",
+    "campaign_name": "Telegram App-Rating Work-From-Home Task Fraud",
+    "channel": "email",
+    "language": "english",
+    "raw_content": "Congratulations! You are shortlisted for Part-Time Assistant role earning ₹50,000/month. Contact HR on WhatsApp at +918877665533 or visit https://app-review-wealth.com/login/verify?id=9318.",
+    "timestamp": "2026-08-11T04:37:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-004",
+      "impersonation_target": "employer",
+      "tactics": [
+        "trust_building",
+        "isolation_tactic",
+        "payment_redirection"
+      ],
+      "phone": "+918877665533",
+      "upi": "merchant.fund@paytm",
+      "domain": "app-review-wealth.com",
+      "url": "https://app-review-wealth.com/login/verify?id=9318",
+      "actor": "SilkTiger Syndicate",
+      "malware": "None"
+    }
+  },
+  {
+    "incident_id": "INC-0076",
+    "campaign_id": "CAM-004",
+    "campaign_name": "Telegram App-Rating Work-From-Home Task Fraud",
+    "channel": "sms",
+    "language": "hinglish",
+    "raw_content": "URGENT: Your Punjab National Bank account #XX7180 is blocked due to pending KYC verification. Update immediately at https://app-review-wealth.com/login/verify?id=6446 or call +918877665533 to prevent permanent suspension.",
+    "timestamp": "2026-08-30T20:55:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-004",
+      "impersonation_target": "employer",
+      "tactics": [
+        "trust_building",
+        "isolation_tactic",
+        "payment_redirection"
+      ],
+      "phone": "+918877665533",
+      "upi": "merchant.fund@paytm",
+      "domain": "app-review-wealth.com",
+      "url": "https://app-review-wealth.com/login/verify?id=6446",
+      "actor": "SilkTiger Syndicate",
+      "malware": "None"
+    }
+  },
+  {
+    "incident_id": "INC-0077",
+    "campaign_id": "CAM-004",
+    "campaign_name": "Telegram App-Rating Work-From-Home Task Fraud",
+    "channel": "whatsapp",
+    "language": "tanglish",
+    "raw_content": "Part time job opportunity daily 2 hours work ₹2000-₹5000 earn pannalam. WhatsApp pannunga +918877665533 or register https://app-review-wealth.com/login/verify?id=1715.",
+    "timestamp": "2026-08-23T06:09:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-004",
+      "impersonation_target": "employer",
+      "tactics": [
+        "trust_building",
+        "isolation_tactic",
+        "payment_redirection"
+      ],
+      "phone": "+918877665533",
+      "upi": "taskreward.vip@okaxis",
+      "domain": "app-review-wealth.com",
+      "url": "https://app-review-wealth.com/login/verify?id=1715",
+      "actor": "SilkTiger Syndicate",
+      "malware": "None"
+    }
+  },
+  {
+    "incident_id": "INC-0078",
+    "campaign_id": "CAM-004",
+    "campaign_name": "Telegram App-Rating Work-From-Home Task Fraud",
+    "channel": "email",
+    "language": "english",
+    "raw_content": "Congratulations! You are shortlisted for Part-Time Assistant role earning ₹50,000/month. Contact HR on WhatsApp at +918877665533 or visit https://app-review-wealth.com/login/verify?id=2633.",
+    "timestamp": "2026-08-05T23:55:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-004",
+      "impersonation_target": "employer",
+      "tactics": [
+        "trust_building",
+        "isolation_tactic",
+        "payment_redirection"
+      ],
+      "phone": "+918877665533",
+      "upi": "taskreward.vip@okaxis",
+      "domain": "app-review-wealth.com",
+      "url": "https://app-review-wealth.com/login/verify?id=2633",
+      "actor": "SilkTiger Syndicate",
+      "malware": "None"
+    }
+  },
+  {
+    "incident_id": "INC-0079",
+    "campaign_id": "CAM-004",
+    "campaign_name": "Telegram App-Rating Work-From-Home Task Fraud",
+    "channel": "whatsapp",
+    "language": "english",
+    "raw_content": "Congratulations! You are shortlisted for Part-Time Assistant role earning ₹50,000/month. Contact HR on WhatsApp at +918877665533 or visit https://app-review-wealth.com/login/verify?id=7512.",
+    "timestamp": "2026-08-23T03:24:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-004",
+      "impersonation_target": "employer",
+      "tactics": [
+        "trust_building",
+        "isolation_tactic",
+        "payment_redirection"
+      ],
+      "phone": "+918877665533",
+      "upi": "merchant.fund@paytm",
+      "domain": "app-review-wealth.com",
+      "url": "https://app-review-wealth.com/login/verify?id=7512",
+      "actor": "SilkTiger Syndicate",
+      "malware": "None"
+    }
+  },
+  {
+    "incident_id": "INC-0080",
+    "campaign_id": "CAM-004",
+    "campaign_name": "Telegram App-Rating Work-From-Home Task Fraud",
+    "channel": "sms",
+    "language": "tanglish",
+    "raw_content": "Part time job opportunity daily 2 hours work ₹2000-₹5000 earn pannalam. WhatsApp pannunga +918877665544 or register https://global-task-earnings.vip/login/verify?id=5708.",
+    "timestamp": "2026-08-26T06:45:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-004",
+      "impersonation_target": "employer",
+      "tactics": [
+        "trust_building",
+        "isolation_tactic",
+        "payment_redirection"
+      ],
+      "phone": "+918877665544",
+      "upi": "taskreward.vip@okaxis",
+      "domain": "global-task-earnings.vip",
+      "url": "https://global-task-earnings.vip/login/verify?id=5708",
+      "actor": "SilkTiger Syndicate",
+      "malware": "None"
+    }
+  },
+  {
+    "incident_id": "INC-0081",
+    "campaign_id": "CAM-004",
+    "campaign_name": "Telegram App-Rating Work-From-Home Task Fraud",
+    "channel": "sms",
+    "language": "hinglish",
+    "raw_content": "URGENT: Your Paytm Payments Bank account #XX5806 is blocked due to pending KYC verification. Update immediately at https://global-task-earnings.vip/login/verify?id=6314 or call +918877665533 to prevent permanent suspension.",
+    "timestamp": "2026-08-12T23:09:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-004",
+      "impersonation_target": "employer",
+      "tactics": [
+        "trust_building",
+        "isolation_tactic",
+        "payment_redirection"
+      ],
+      "phone": "+918877665533",
+      "upi": "taskreward.vip@okaxis",
+      "domain": "global-task-earnings.vip",
+      "url": "https://global-task-earnings.vip/login/verify?id=6314",
+      "actor": "SilkTiger Syndicate",
+      "malware": "None"
+    }
+  },
+  {
+    "incident_id": "INC-0082",
+    "campaign_id": "CAM-004",
+    "campaign_name": "Telegram App-Rating Work-From-Home Task Fraud",
+    "channel": "sms",
+    "language": "tanglish",
+    "raw_content": "Part time job opportunity daily 2 hours work ₹2000-₹5000 earn pannalam. WhatsApp pannunga +918877665544 or register https://global-task-earnings.vip/login/verify?id=2293.",
+    "timestamp": "2026-08-31T04:09:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-004",
+      "impersonation_target": "employer",
+      "tactics": [
+        "trust_building",
+        "isolation_tactic",
+        "payment_redirection"
+      ],
+      "phone": "+918877665544",
+      "upi": "taskreward.vip@okaxis",
+      "domain": "global-task-earnings.vip",
+      "url": "https://global-task-earnings.vip/login/verify?id=2293",
+      "actor": "SilkTiger Syndicate",
+      "malware": "None"
+    }
+  },
+  {
+    "incident_id": "INC-0083",
+    "campaign_id": "CAM-004",
+    "campaign_name": "Telegram App-Rating Work-From-Home Task Fraud",
+    "channel": "whatsapp",
+    "language": "hinglish",
+    "raw_content": "ALERT: Unauthorized login attempt detected on your Paytm Payments Bank account. To secure your account, send ₹1 verification to UPI merchant.fund@paytm or click https://app-review-wealth.com/login/verify?id=1153.",
+    "timestamp": "2026-08-18T15:04:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-004",
+      "impersonation_target": "employer",
+      "tactics": [
+        "trust_building",
+        "isolation_tactic",
+        "payment_redirection"
+      ],
+      "phone": "+918877665533",
+      "upi": "merchant.fund@paytm",
+      "domain": "app-review-wealth.com",
+      "url": "https://app-review-wealth.com/login/verify?id=1153",
+      "actor": "SilkTiger Syndicate",
+      "malware": "None"
+    }
+  },
+  {
+    "incident_id": "INC-0084",
+    "campaign_id": "CAM-004",
+    "campaign_name": "Telegram App-Rating Work-From-Home Task Fraud",
+    "channel": "sms",
+    "language": "hinglish",
+    "raw_content": "ALERT: Unauthorized login attempt detected on your Paytm Payments Bank account. To secure your account, send ₹1 verification to UPI merchant.fund@paytm or click https://app-review-wealth.com/login/verify?id=8484.",
+    "timestamp": "2026-08-29T01:06:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-004",
+      "impersonation_target": "employer",
+      "tactics": [
+        "trust_building",
+        "isolation_tactic",
+        "payment_redirection"
+      ],
+      "phone": "+918877665533",
+      "upi": "merchant.fund@paytm",
+      "domain": "app-review-wealth.com",
+      "url": "https://app-review-wealth.com/login/verify?id=8484",
+      "actor": "SilkTiger Syndicate",
+      "malware": "None"
+    }
+  },
+  {
+    "incident_id": "INC-0085",
+    "campaign_id": "CAM-004",
+    "campaign_name": "Telegram App-Rating Work-From-Home Task Fraud",
+    "channel": "email",
+    "language": "hinglish",
+    "raw_content": "ALERT: Unauthorized login attempt detected on your Paytm Payments Bank account. To secure your account, send ₹1 verification to UPI merchant.fund@paytm or click https://app-review-wealth.com/login/verify?id=1359.",
+    "timestamp": "2026-08-20T07:49:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-004",
+      "impersonation_target": "employer",
+      "tactics": [
+        "trust_building",
+        "isolation_tactic",
+        "payment_redirection"
+      ],
+      "phone": "+918877665533",
+      "upi": "merchant.fund@paytm",
+      "domain": "app-review-wealth.com",
+      "url": "https://app-review-wealth.com/login/verify?id=1359",
+      "actor": "SilkTiger Syndicate",
+      "malware": "None"
+    }
+  },
+  {
+    "incident_id": "INC-0086",
+    "campaign_id": "CAM-004",
+    "campaign_name": "Telegram App-Rating Work-From-Home Task Fraud",
+    "channel": "email",
+    "language": "english",
+    "raw_content": "Work from home daily earning ₹3000-₹8000 by rating apps. Message our recruiter at +918877665533 to join our Telegram group.",
+    "timestamp": "2026-08-26T09:49:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-004",
+      "impersonation_target": "employer",
+      "tactics": [
+        "trust_building",
+        "isolation_tactic",
+        "payment_redirection"
+      ],
+      "phone": "+918877665533",
+      "upi": "taskreward.vip@okaxis",
+      "domain": "app-review-wealth.com",
+      "url": "https://app-review-wealth.com/login/verify?id=4588",
+      "actor": "SilkTiger Syndicate",
+      "malware": "None"
+    }
+  },
+  {
+    "incident_id": "INC-0087",
+    "campaign_id": "CAM-004",
+    "campaign_name": "Telegram App-Rating Work-From-Home Task Fraud",
+    "channel": "whatsapp",
+    "language": "tanglish",
+    "raw_content": "Part time job opportunity daily 2 hours work ₹2000-₹5000 earn pannalam. WhatsApp pannunga +918877665544 or register https://app-review-wealth.com/login/verify?id=8222.",
+    "timestamp": "2026-08-05T12:58:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-004",
+      "impersonation_target": "employer",
+      "tactics": [
+        "trust_building",
+        "isolation_tactic",
+        "payment_redirection"
+      ],
+      "phone": "+918877665544",
+      "upi": "taskreward.vip@okaxis",
+      "domain": "app-review-wealth.com",
+      "url": "https://app-review-wealth.com/login/verify?id=8222",
+      "actor": "SilkTiger Syndicate",
+      "malware": "None"
+    }
+  },
+  {
+    "incident_id": "INC-0088",
+    "campaign_id": "CAM-004",
+    "campaign_name": "Telegram App-Rating Work-From-Home Task Fraud",
+    "channel": "sms",
+    "language": "hinglish",
+    "raw_content": "ALERT: Unauthorized login attempt detected on your Paytm Payments Bank account. To secure your account, send ₹1 verification to UPI taskreward.vip@okaxis or click https://global-task-earnings.vip/login/verify?id=3165.",
+    "timestamp": "2026-08-17T18:53:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-004",
+      "impersonation_target": "employer",
+      "tactics": [
+        "trust_building",
+        "isolation_tactic",
+        "payment_redirection"
+      ],
+      "phone": "+918877665533",
+      "upi": "taskreward.vip@okaxis",
+      "domain": "global-task-earnings.vip",
+      "url": "https://global-task-earnings.vip/login/verify?id=3165",
+      "actor": "SilkTiger Syndicate",
+      "malware": "None"
+    }
+  },
+  {
+    "incident_id": "INC-0089",
+    "campaign_id": "CAM-004",
+    "campaign_name": "Telegram App-Rating Work-From-Home Task Fraud",
+    "channel": "email",
+    "language": "hinglish",
+    "raw_content": "Dear Customer, your SBI netbanking services are suspended. Please complete PAN/Aadhaar update at https://global-task-earnings.vip/login/verify?id=8673. Contact support at +918877665533.",
+    "timestamp": "2026-08-25T07:25:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-004",
+      "impersonation_target": "employer",
+      "tactics": [
+        "trust_building",
+        "isolation_tactic",
+        "payment_redirection"
+      ],
+      "phone": "+918877665533",
+      "upi": "merchant.fund@paytm",
+      "domain": "global-task-earnings.vip",
+      "url": "https://global-task-earnings.vip/login/verify?id=8673",
+      "actor": "SilkTiger Syndicate",
+      "malware": "None"
+    }
+  },
+  {
+    "incident_id": "INC-0090",
+    "campaign_id": "CAM-004",
+    "campaign_name": "Telegram App-Rating Work-From-Home Task Fraud",
+    "channel": "email",
+    "language": "hinglish",
+    "raw_content": "URGENT: Your SBI account #XX7038 is blocked due to pending KYC verification. Update immediately at https://app-review-wealth.com/login/verify?id=9791 or call +918877665533 to prevent permanent suspension.",
+    "timestamp": "2026-08-25T07:16:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-004",
+      "impersonation_target": "employer",
+      "tactics": [
+        "trust_building",
+        "isolation_tactic",
+        "payment_redirection"
+      ],
+      "phone": "+918877665533",
+      "upi": "taskreward.vip@okaxis",
+      "domain": "app-review-wealth.com",
+      "url": "https://app-review-wealth.com/login/verify?id=9791",
+      "actor": "SilkTiger Syndicate",
+      "malware": "None"
+    }
+  },
+  {
+    "incident_id": "INC-0091",
+    "campaign_id": "CAM-004",
+    "campaign_name": "Telegram App-Rating Work-From-Home Task Fraud",
+    "channel": "email",
+    "language": "hinglish",
+    "raw_content": "ALERT: Unauthorized login attempt detected on your SBI account. To secure your account, send ₹1 verification to UPI taskreward.vip@okaxis or click https://global-task-earnings.vip/login/verify?id=8724.",
+    "timestamp": "2026-08-09T06:04:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-004",
+      "impersonation_target": "employer",
+      "tactics": [
+        "trust_building",
+        "isolation_tactic",
+        "payment_redirection"
+      ],
+      "phone": "+918877665533",
+      "upi": "taskreward.vip@okaxis",
+      "domain": "global-task-earnings.vip",
+      "url": "https://global-task-earnings.vip/login/verify?id=8724",
+      "actor": "SilkTiger Syndicate",
+      "malware": "None"
+    }
+  },
+  {
+    "incident_id": "INC-0092",
+    "campaign_id": "CAM-004",
+    "campaign_name": "Telegram App-Rating Work-From-Home Task Fraud",
+    "channel": "email",
+    "language": "hinglish",
+    "raw_content": "ALERT: Unauthorized login attempt detected on your SBI account. To secure your account, send ₹1 verification to UPI merchant.fund@paytm or click https://global-task-earnings.vip/login/verify?id=3290.",
+    "timestamp": "2026-08-04T13:15:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-004",
+      "impersonation_target": "employer",
+      "tactics": [
+        "trust_building",
+        "isolation_tactic",
+        "payment_redirection"
+      ],
+      "phone": "+918877665533",
+      "upi": "merchant.fund@paytm",
+      "domain": "global-task-earnings.vip",
+      "url": "https://global-task-earnings.vip/login/verify?id=3290",
+      "actor": "SilkTiger Syndicate",
+      "malware": "None"
+    }
+  },
+  {
+    "incident_id": "INC-0093",
+    "campaign_id": "CAM-004",
+    "campaign_name": "Telegram App-Rating Work-From-Home Task Fraud",
+    "channel": "email",
+    "language": "english",
+    "raw_content": "Work from home daily earning ₹3000-₹8000 by rating apps. Message our recruiter at +918877665533 to join our Telegram group.",
+    "timestamp": "2026-08-14T18:02:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-004",
+      "impersonation_target": "employer",
+      "tactics": [
+        "trust_building",
+        "isolation_tactic",
+        "payment_redirection"
+      ],
+      "phone": "+918877665533",
+      "upi": "merchant.fund@paytm",
+      "domain": "app-review-wealth.com",
+      "url": "https://app-review-wealth.com/login/verify?id=3531",
+      "actor": "SilkTiger Syndicate",
+      "malware": "None"
+    }
+  },
+  {
+    "incident_id": "INC-0094",
+    "campaign_id": "CAM-004",
+    "campaign_name": "Telegram App-Rating Work-From-Home Task Fraud",
+    "channel": "whatsapp",
+    "language": "hinglish",
+    "raw_content": "URGENT: Your SBI account #XX9920 is blocked due to pending KYC verification. Update immediately at https://global-task-earnings.vip/login/verify?id=6942 or call +918877665533 to prevent permanent suspension.",
+    "timestamp": "2026-08-12T11:25:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-004",
+      "impersonation_target": "employer",
+      "tactics": [
+        "trust_building",
+        "isolation_tactic",
+        "payment_redirection"
+      ],
+      "phone": "+918877665533",
+      "upi": "merchant.fund@paytm",
+      "domain": "global-task-earnings.vip",
+      "url": "https://global-task-earnings.vip/login/verify?id=6942",
+      "actor": "SilkTiger Syndicate",
+      "malware": "None"
+    }
+  },
+  {
+    "incident_id": "INC-0095",
+    "campaign_id": "CAM-004",
+    "campaign_name": "Telegram App-Rating Work-From-Home Task Fraud",
+    "channel": "sms",
+    "language": "english",
+    "raw_content": "Congratulations! You are shortlisted for Part-Time Assistant role earning ₹50,000/month. Contact HR on WhatsApp at +918877665533 or visit https://global-task-earnings.vip/login/verify?id=1349.",
+    "timestamp": "2026-08-27T04:13:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-004",
+      "impersonation_target": "employer",
+      "tactics": [
+        "trust_building",
+        "isolation_tactic",
+        "payment_redirection"
+      ],
+      "phone": "+918877665533",
+      "upi": "taskreward.vip@okaxis",
+      "domain": "global-task-earnings.vip",
+      "url": "https://global-task-earnings.vip/login/verify?id=1349",
+      "actor": "SilkTiger Syndicate",
+      "malware": "None"
+    }
+  },
+  {
+    "incident_id": "INC-0096",
+    "campaign_id": "CAM-005",
+    "campaign_name": "Law Enforcement Video Call Digital Arrest Scam",
+    "channel": "email",
+    "language": "hinglish",
+    "raw_content": "URGENT: Your Paytm Payments Bank account #XX1046 is blocked due to pending KYC verification. Update immediately at https://cbi-clearance-verification.in/login/verify?id=3417 or call +917766554433 to prevent permanent suspension.",
+    "timestamp": "2026-08-28T14:08:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-005",
+      "impersonation_target": "law_enforcement",
+      "tactics": [
+        "fear_induction",
+        "authority_impersonation",
+        "isolation_tactic"
+      ],
+      "phone": "+917766554433",
+      "upi": "cbi.official.clearance@sbi",
+      "domain": "cbi-clearance-verification.in",
+      "url": "https://cbi-clearance-verification.in/login/verify?id=3417",
+      "actor": "ShadowArrest",
+      "malware": "VideoRecord Extortion Toolkit"
+    }
+  },
+  {
+    "incident_id": "INC-0097",
+    "campaign_id": "CAM-005",
+    "campaign_name": "Law Enforcement Video Call Digital Arrest Scam",
+    "channel": "sms",
+    "language": "hindi",
+    "raw_content": "प्रिय उपभोक्ता, आपके पिछले महीने का बिजली बिल अपडेट न होने के कारण आज रात बिजली काट दी जाएगी। तुरंत बिजली अधिकारी +917766554433 से संपर्क करें।",
+    "timestamp": "2026-08-06T18:03:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-005",
+      "impersonation_target": "law_enforcement",
+      "tactics": [
+        "fear_induction",
+        "authority_impersonation",
+        "isolation_tactic"
+      ],
+      "phone": "+917766554433",
+      "upi": "cbi.official.clearance@sbi",
+      "domain": "cbi-clearance-verification.in",
+      "url": "https://cbi-clearance-verification.in/login/verify?id=1243",
+      "actor": "ShadowArrest",
+      "malware": "VideoRecord Extortion Toolkit"
+    }
+  },
+  {
+    "incident_id": "INC-0098",
+    "campaign_id": "CAM-005",
+    "campaign_name": "Law Enforcement Video Call Digital Arrest Scam",
+    "channel": "sms",
+    "language": "hinglish",
+    "raw_content": "Dear Customer, your Paytm Payments Bank netbanking services are suspended. Please complete PAN/Aadhaar update at https://cbi-clearance-verification.in/login/verify?id=8344. Contact support at +917766554433.",
+    "timestamp": "2026-08-05T00:32:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-005",
+      "impersonation_target": "law_enforcement",
+      "tactics": [
+        "fear_induction",
+        "authority_impersonation",
+        "isolation_tactic"
+      ],
+      "phone": "+917766554433",
+      "upi": "cbi.official.clearance@sbi",
+      "domain": "cbi-clearance-verification.in",
+      "url": "https://cbi-clearance-verification.in/login/verify?id=8344",
+      "actor": "ShadowArrest",
+      "malware": "VideoRecord Extortion Toolkit"
+    }
+  },
+  {
+    "incident_id": "INC-0099",
+    "campaign_id": "CAM-005",
+    "campaign_name": "Law Enforcement Video Call Digital Arrest Scam",
+    "channel": "whatsapp",
+    "language": "hinglish",
+    "raw_content": "URGENT: Your Axis Bank account #XX7984 is blocked due to pending KYC verification. Update immediately at https://cbi-clearance-verification.in/login/verify?id=1996 or call +917766554422 to prevent permanent suspension.",
+    "timestamp": "2026-08-05T01:45:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-005",
+      "impersonation_target": "law_enforcement",
+      "tactics": [
+        "fear_induction",
+        "authority_impersonation",
+        "isolation_tactic"
+      ],
+      "phone": "+917766554422",
+      "upi": "cybercell.narcotics@hdfc",
+      "domain": "cbi-clearance-verification.in",
+      "url": "https://cbi-clearance-verification.in/login/verify?id=1996",
+      "actor": "ShadowArrest",
+      "malware": "VideoRecord Extortion Toolkit"
+    }
+  },
+  {
+    "incident_id": "INC-0100",
+    "campaign_id": "CAM-005",
+    "campaign_name": "Law Enforcement Video Call Digital Arrest Scam",
+    "channel": "email",
+    "language": "english",
+    "raw_content": "URGENT: Dear Consumer, your electricity power will be disconnected tonight at 9:30 PM due to unpaid bill of previous month. Immediately call officer at +917766554422.",
+    "timestamp": "2026-08-11T22:38:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-005",
+      "impersonation_target": "law_enforcement",
+      "tactics": [
+        "fear_induction",
+        "authority_impersonation",
+        "isolation_tactic"
+      ],
+      "phone": "+917766554422",
+      "upi": "cbi.official.clearance@sbi",
+      "domain": "cbi-clearance-verification.in",
+      "url": "https://cbi-clearance-verification.in/login/verify?id=3067",
+      "actor": "ShadowArrest",
+      "malware": "VideoRecord Extortion Toolkit"
+    }
+  },
+  {
+    "incident_id": "INC-0101",
+    "campaign_id": "CAM-005",
+    "campaign_name": "Law Enforcement Video Call Digital Arrest Scam",
+    "channel": "whatsapp",
+    "language": "hindi",
+    "raw_content": "प्रिय उपभोक्ता, आपके पिछले महीने का बिजली बिल अपडेट न होने के कारण आज रात बिजली काट दी जाएगी। तुरंत बिजली अधिकारी +917766554422 से संपर्क करें।",
+    "timestamp": "2026-08-12T00:25:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-005",
+      "impersonation_target": "law_enforcement",
+      "tactics": [
+        "fear_induction",
+        "authority_impersonation",
+        "isolation_tactic"
+      ],
+      "phone": "+917766554422",
+      "upi": "cbi.official.clearance@sbi",
+      "domain": "cbi-clearance-verification.in",
+      "url": "https://cbi-clearance-verification.in/login/verify?id=4522",
+      "actor": "ShadowArrest",
+      "malware": "VideoRecord Extortion Toolkit"
+    }
+  },
+  {
+    "incident_id": "INC-0102",
+    "campaign_id": "CAM-005",
+    "campaign_name": "Law Enforcement Video Call Digital Arrest Scam",
+    "channel": "whatsapp",
+    "language": "hinglish",
+    "raw_content": "URGENT: Your ICICI account #XX8770 is blocked due to pending KYC verification. Update immediately at https://cbi-clearance-verification.in/login/verify?id=5176 or call +917766554422 to prevent permanent suspension.",
+    "timestamp": "2026-08-03T12:05:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-005",
+      "impersonation_target": "law_enforcement",
+      "tactics": [
+        "fear_induction",
+        "authority_impersonation",
+        "isolation_tactic"
+      ],
+      "phone": "+917766554422",
+      "upi": "cybercell.narcotics@hdfc",
+      "domain": "cbi-clearance-verification.in",
+      "url": "https://cbi-clearance-verification.in/login/verify?id=5176",
+      "actor": "ShadowArrest",
+      "malware": "VideoRecord Extortion Toolkit"
+    }
+  },
+  {
+    "incident_id": "INC-0103",
+    "campaign_id": "CAM-005",
+    "campaign_name": "Law Enforcement Video Call Digital Arrest Scam",
+    "channel": "whatsapp",
+    "language": "english",
+    "raw_content": "URGENT: Dear Consumer, your electricity power will be disconnected tonight at 9:30 PM due to unpaid bill of previous month. Immediately call officer at +917766554433.",
+    "timestamp": "2026-08-02T19:38:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-005",
+      "impersonation_target": "law_enforcement",
+      "tactics": [
+        "fear_induction",
+        "authority_impersonation",
+        "isolation_tactic"
+      ],
+      "phone": "+917766554433",
+      "upi": "cbi.official.clearance@sbi",
+      "domain": "cbi-clearance-verification.in",
+      "url": "https://cbi-clearance-verification.in/login/verify?id=3002",
+      "actor": "ShadowArrest",
+      "malware": "VideoRecord Extortion Toolkit"
+    }
+  },
+  {
+    "incident_id": "INC-0104",
+    "campaign_id": "CAM-005",
+    "campaign_name": "Law Enforcement Video Call Digital Arrest Scam",
+    "channel": "whatsapp",
+    "language": "hindi",
+    "raw_content": "प्रिय उपभोक्ता, आपके पिछले महीने का बिजली बिल अपडेट न होने के कारण आज रात बिजली काट दी जाएगी। तुरंत बिजली अधिकारी +917766554433 से संपर्क करें।",
+    "timestamp": "2026-08-18T21:07:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-005",
+      "impersonation_target": "law_enforcement",
+      "tactics": [
+        "fear_induction",
+        "authority_impersonation",
+        "isolation_tactic"
+      ],
+      "phone": "+917766554433",
+      "upi": "cbi.official.clearance@sbi",
+      "domain": "cbi-clearance-verification.in",
+      "url": "https://cbi-clearance-verification.in/login/verify?id=4674",
+      "actor": "ShadowArrest",
+      "malware": "VideoRecord Extortion Toolkit"
+    }
+  },
+  {
+    "incident_id": "INC-0105",
+    "campaign_id": "CAM-005",
+    "campaign_name": "Law Enforcement Video Call Digital Arrest Scam",
+    "channel": "sms",
+    "language": "hinglish",
+    "raw_content": "URGENT: Your HDFC account #XX6062 is blocked due to pending KYC verification. Update immediately at https://cbi-clearance-verification.in/login/verify?id=1474 or call +917766554422 to prevent permanent suspension.",
+    "timestamp": "2026-08-12T10:11:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-005",
+      "impersonation_target": "law_enforcement",
+      "tactics": [
+        "fear_induction",
+        "authority_impersonation",
+        "isolation_tactic"
+      ],
+      "phone": "+917766554422",
+      "upi": "cbi.official.clearance@sbi",
+      "domain": "cbi-clearance-verification.in",
+      "url": "https://cbi-clearance-verification.in/login/verify?id=1474",
+      "actor": "ShadowArrest",
+      "malware": "VideoRecord Extortion Toolkit"
+    }
+  },
+  {
+    "incident_id": "INC-0106",
+    "campaign_id": "CAM-005",
+    "campaign_name": "Law Enforcement Video Call Digital Arrest Scam",
+    "channel": "sms",
+    "language": "hinglish",
+    "raw_content": "ALERT: Unauthorized login attempt detected on your SBI account. To secure your account, send ₹1 verification to UPI cbi.official.clearance@sbi or click https://cbi-clearance-verification.in/login/verify?id=1502.",
+    "timestamp": "2026-08-15T00:21:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-005",
+      "impersonation_target": "law_enforcement",
+      "tactics": [
+        "fear_induction",
+        "authority_impersonation",
+        "isolation_tactic"
+      ],
+      "phone": "+917766554422",
+      "upi": "cbi.official.clearance@sbi",
+      "domain": "cbi-clearance-verification.in",
+      "url": "https://cbi-clearance-verification.in/login/verify?id=1502",
+      "actor": "ShadowArrest",
+      "malware": "VideoRecord Extortion Toolkit"
+    }
+  },
+  {
+    "incident_id": "INC-0107",
+    "campaign_id": "CAM-005",
+    "campaign_name": "Law Enforcement Video Call Digital Arrest Scam",
+    "channel": "email",
+    "language": "hindi",
+    "raw_content": "प्रिय उपभोक्ता, आपके पिछले महीने का बिजली बिल अपडेट न होने के कारण आज रात बिजली काट दी जाएगी। तुरंत बिजली अधिकारी +917766554422 से संपर्क करें।",
+    "timestamp": "2026-08-03T18:28:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-005",
+      "impersonation_target": "law_enforcement",
+      "tactics": [
+        "fear_induction",
+        "authority_impersonation",
+        "isolation_tactic"
+      ],
+      "phone": "+917766554422",
+      "upi": "cbi.official.clearance@sbi",
+      "domain": "cbi-clearance-verification.in",
+      "url": "https://cbi-clearance-verification.in/login/verify?id=3549",
+      "actor": "ShadowArrest",
+      "malware": "VideoRecord Extortion Toolkit"
+    }
+  },
+  {
+    "incident_id": "INC-0108",
+    "campaign_id": "CAM-005",
+    "campaign_name": "Law Enforcement Video Call Digital Arrest Scam",
+    "channel": "email",
+    "language": "hindi",
+    "raw_content": "प्रिय उपभोक्ता, आपके पिछले महीने का बिजली बिल अपडेट न होने के कारण आज रात बिजली काट दी जाएगी। तुरंत बिजली अधिकारी +917766554422 से संपर्क करें।",
+    "timestamp": "2026-08-14T13:18:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-005",
+      "impersonation_target": "law_enforcement",
+      "tactics": [
+        "fear_induction",
+        "authority_impersonation",
+        "isolation_tactic"
+      ],
+      "phone": "+917766554422",
+      "upi": "cybercell.narcotics@hdfc",
+      "domain": "cbi-clearance-verification.in",
+      "url": "https://cbi-clearance-verification.in/login/verify?id=4531",
+      "actor": "ShadowArrest",
+      "malware": "VideoRecord Extortion Toolkit"
+    }
+  },
+  {
+    "incident_id": "INC-0109",
+    "campaign_id": "CAM-005",
+    "campaign_name": "Law Enforcement Video Call Digital Arrest Scam",
+    "channel": "sms",
+    "language": "hinglish",
+    "raw_content": "ALERT: Unauthorized login attempt detected on your Axis Bank account. To secure your account, send ₹1 verification to UPI cybercell.narcotics@hdfc or click https://cbi-clearance-verification.in/login/verify?id=4612.",
+    "timestamp": "2026-08-07T19:13:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-005",
+      "impersonation_target": "law_enforcement",
+      "tactics": [
+        "fear_induction",
+        "authority_impersonation",
+        "isolation_tactic"
+      ],
+      "phone": "+917766554422",
+      "upi": "cybercell.narcotics@hdfc",
+      "domain": "cbi-clearance-verification.in",
+      "url": "https://cbi-clearance-verification.in/login/verify?id=4612",
+      "actor": "ShadowArrest",
+      "malware": "VideoRecord Extortion Toolkit"
+    }
+  },
+  {
+    "incident_id": "INC-0110",
+    "campaign_id": "CAM-005",
+    "campaign_name": "Law Enforcement Video Call Digital Arrest Scam",
+    "channel": "sms",
+    "language": "hindi",
+    "raw_content": "प्रिय उपभोक्ता, आपके पिछले महीने का बिजली बिल अपडेट न होने के कारण आज रात बिजली काट दी जाएगी। तुरंत बिजली अधिकारी +917766554422 से संपर्क करें।",
+    "timestamp": "2026-08-14T03:45:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-005",
+      "impersonation_target": "law_enforcement",
+      "tactics": [
+        "fear_induction",
+        "authority_impersonation",
+        "isolation_tactic"
+      ],
+      "phone": "+917766554422",
+      "upi": "cbi.official.clearance@sbi",
+      "domain": "cbi-clearance-verification.in",
+      "url": "https://cbi-clearance-verification.in/login/verify?id=9149",
+      "actor": "ShadowArrest",
+      "malware": "VideoRecord Extortion Toolkit"
+    }
+  },
+  {
+    "incident_id": "INC-0111",
+    "campaign_id": "CAM-005",
+    "campaign_name": "Law Enforcement Video Call Digital Arrest Scam",
+    "channel": "whatsapp",
+    "language": "hinglish",
+    "raw_content": "ALERT: Unauthorized login attempt detected on your Axis Bank account. To secure your account, send ₹1 verification to UPI cbi.official.clearance@sbi or click https://cbi-clearance-verification.in/login/verify?id=1693.",
+    "timestamp": "2026-08-28T20:36:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-005",
+      "impersonation_target": "law_enforcement",
+      "tactics": [
+        "fear_induction",
+        "authority_impersonation",
+        "isolation_tactic"
+      ],
+      "phone": "+917766554422",
+      "upi": "cbi.official.clearance@sbi",
+      "domain": "cbi-clearance-verification.in",
+      "url": "https://cbi-clearance-verification.in/login/verify?id=1693",
+      "actor": "ShadowArrest",
+      "malware": "VideoRecord Extortion Toolkit"
+    }
+  },
+  {
+    "incident_id": "INC-0112",
+    "campaign_id": "CAM-005",
+    "campaign_name": "Law Enforcement Video Call Digital Arrest Scam",
+    "channel": "email",
+    "language": "hinglish",
+    "raw_content": "Dear Customer, your SBI netbanking services are suspended. Please complete PAN/Aadhaar update at https://cbi-clearance-verification.in/login/verify?id=7636. Contact support at +917766554422.",
+    "timestamp": "2026-09-01T05:29:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-005",
+      "impersonation_target": "law_enforcement",
+      "tactics": [
+        "fear_induction",
+        "authority_impersonation",
+        "isolation_tactic"
+      ],
+      "phone": "+917766554422",
+      "upi": "cybercell.narcotics@hdfc",
+      "domain": "cbi-clearance-verification.in",
+      "url": "https://cbi-clearance-verification.in/login/verify?id=7636",
+      "actor": "ShadowArrest",
+      "malware": "VideoRecord Extortion Toolkit"
+    }
+  },
+  {
+    "incident_id": "INC-0113",
+    "campaign_id": "CAM-005",
+    "campaign_name": "Law Enforcement Video Call Digital Arrest Scam",
+    "channel": "whatsapp",
+    "language": "hindi",
+    "raw_content": "प्रिय उपभोक्ता, आपके पिछले महीने का बिजली बिल अपडेट न होने के कारण आज रात बिजली काट दी जाएगी। तुरंत बिजली अधिकारी +917766554422 से संपर्क करें।",
+    "timestamp": "2026-08-13T19:47:00+00:00",
+    "ground_truth": {
+      "is_malicious": true,
+      "campaign_id": "CAM-005",
+      "impersonation_target": "law_enforcement",
+      "tactics": [
+        "fear_induction",
+        "authority_impersonation",
+        "isolation_tactic"
+      ],
+      "phone": "+917766554422",
+      "upi": "cbi.official.clearance@sbi",
+      "domain": "cbi-clearance-verification.in",
+      "url": "https://cbi-clearance-verification.in/login/verify?id=8138",
+      "actor": "ShadowArrest",
+      "malware": "VideoRecord Extortion Toolkit"
+    }
+  },
+  {
+    "incident_id": "INC-NEG-001",
+    "campaign_id": null,
+    "campaign_name": null,
+    "channel": "sms",
+    "language": "english",
+    "raw_content": "URGENT: Your SBI bank account OTP for login is 492018. Do not share OTP with anyone.",
+    "timestamp": "2026-08-13T21:00:00+00:00",
+    "ground_truth": {
+      "is_malicious": false,
+      "campaign_id": null,
+      "impersonation_target": "none",
+      "tactics": [],
+      "note": "Legitimate automated OTP message, contains KYC/bank keywords but benign."
+    }
+  },
+  {
+    "incident_id": "INC-NEG-002",
+    "campaign_id": null,
+    "campaign_name": null,
+    "channel": "email",
+    "language": "english",
+    "raw_content": "Dear Customer, your HDFC bank monthly statement is ready for download. Please log in to your official netbanking portal.",
+    "timestamp": "2026-08-11T13:00:00+00:00",
+    "ground_truth": {
+      "is_malicious": false,
+      "campaign_id": null,
+      "impersonation_target": "none",
+      "tactics": [],
+      "note": "Legitimate banking statement notification."
+    }
+  },
+  {
+    "incident_id": "INC-NEG-003",
+    "campaign_id": null,
+    "campaign_name": null,
+    "channel": "sms",
+    "language": "hinglish",
+    "raw_content": "Aapka bank account urgent verify karein. Contact local branch office or visit our physical branch.",
+    "timestamp": "2026-08-22T14:00:00+00:00",
+    "ground_truth": {
+      "is_malicious": false,
+      "campaign_id": null,
+      "impersonation_target": "none",
+      "tactics": [],
+      "note": "Generic keywords without any phone/UPI/URL overlap with active scam campaigns."
+    }
+  },
+  {
+    "incident_id": "INC-NEG-004",
+    "campaign_id": null,
+    "campaign_name": null,
+    "channel": "whatsapp",
+    "language": "tamil",
+    "raw_content": "வங்கி சேவை அறிவிப்பு: உங்கள் கணக்கில் KYC சரிபார்ப்பு முடிந்தது. நன்றி.",
+    "timestamp": "2026-08-23T03:00:00+00:00",
+    "ground_truth": {
+      "is_malicious": false,
+      "campaign_id": null,
+      "impersonation_target": "none",
+      "tactics": [],
+      "note": "Benign completion notification in Tamil."
+    }
+  },
+  {
+    "incident_id": "INC-NEG-005",
+    "campaign_id": null,
+    "campaign_name": null,
+    "channel": "sms",
+    "language": "english",
+    "raw_content": "IndiaPost delivery update: Your package was delivered successfully today. Rate your delivery experience at official indiapost.gov.in.",
+    "timestamp": "2026-08-12T22:00:00+00:00",
+    "ground_truth": {
+      "is_malicious": false,
+      "campaign_id": null,
+      "impersonation_target": "none",
+      "tactics": [],
+      "note": "Benign official IndiaPost message."
+    }
+  }
+]

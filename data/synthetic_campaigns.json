@@ -1,0 +1,191 @@
+[
+  {
+    "campaign_id": "CAM-001",
+    "name": "State Bank KYC SMS Phishing Syndicate",
+    "target": "bank",
+    "detail": "SBI / HDFC KYC Suspension",
+    "phones": [
+      "+919876543210",
+      "+919876543211"
+    ],
+    "upis": [
+      "sbikyc.verify@okhdfcbank",
+      "secure.kyc@paytm"
+    ],
+    "domains": [
+      "sbi-kyc-verify-online.com",
+      "update-bank-kyc-secure.net"
+    ],
+    "ips": [
+      "185.220.101.5",
+      "194.26.29.112"
+    ],
+    "hashes": [
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "malware": "FakeBank APK Stealer",
+    "actor": "PhantomRaven",
+    "tactics": [
+      "urgency_pressure",
+      "authority_impersonation",
+      "credential_harvesting"
+    ],
+    "languages": [
+      "english",
+      "hindi",
+      "hinglish"
+    ],
+    "incident_count": 28
+  },
+  {
+    "campaign_id": "CAM-002",
+    "name": "Electricity Bill Power Disconnection Extortion",
+    "target": "telecom",
+    "detail": "State Electricity Board Power Cut Alert",
+    "phones": [
+      "+919123456789",
+      "+919123456780"
+    ],
+    "upis": [
+      "bijlibill.pay@okaxis",
+      "powerbill.support@ybl"
+    ],
+    "domains": [
+      "bill-payment-portal-online.org"
+    ],
+    "ips": [
+      "45.142.166.11",
+      "91.240.118.89"
+    ],
+    "hashes": [
+      "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8"
+    ],
+    "malware": "QuickSupport Remote Trojan",
+    "actor": "VoltScammer",
+    "tactics": [
+      "urgency_pressure",
+      "authority_pressure",
+      "payment_redirection"
+    ],
+    "languages": [
+      "english",
+      "hindi",
+      "hinglish",
+      "tamil",
+      "tanglish"
+    ],
+    "incident_count": 22
+  },
+  {
+    "campaign_id": "CAM-003",
+    "name": "Postal Courier Redelivery Fee Harvester",
+    "target": "delivery_courier",
+    "detail": "IndiaPost & BlueDart Unclaimed Parcel Scam",
+    "phones": [
+      "+919988776655",
+      "+919988776654"
+    ],
+    "upis": [
+      "indiapost.redelivery@icici",
+      "customs.fee@apl"
+    ],
+    "domains": [
+      "indiapost-tracking-update.com",
+      "courier-redelivery-hub.info"
+    ],
+    "ips": [
+      "103.208.86.12",
+      "193.106.191.45"
+    ],
+    "hashes": [
+      "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918"
+    ],
+    "malware": "SmsForwarder Spyware",
+    "actor": "CourierJackal",
+    "tactics": [
+      "artificial_scarcity",
+      "trust_building",
+      "payment_redirection"
+    ],
+    "languages": [
+      "english",
+      "hinglish",
+      "tanglish"
+    ],
+    "incident_count": 20
+  },
+  {
+    "campaign_id": "CAM-004",
+    "name": "Telegram App-Rating Work-From-Home Task Fraud",
+    "target": "employer",
+    "detail": "YouTube / App Rating High Yield Investment Scam",
+    "phones": [
+      "+918877665544",
+      "+918877665533"
+    ],
+    "upis": [
+      "taskreward.vip@okaxis",
+      "merchant.fund@paytm"
+    ],
+    "domains": [
+      "global-task-earnings.vip",
+      "app-review-wealth.com"
+    ],
+    "ips": [
+      "178.128.240.19",
+      "167.99.145.22"
+    ],
+    "hashes": [
+      "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a"
+    ],
+    "malware": "None",
+    "actor": "SilkTiger Syndicate",
+    "tactics": [
+      "trust_building",
+      "isolation_tactic",
+      "payment_redirection"
+    ],
+    "languages": [
+      "english",
+      "hinglish",
+      "tanglish"
+    ],
+    "incident_count": 25
+  },
+  {
+    "campaign_id": "CAM-005",
+    "name": "Law Enforcement Video Call Digital Arrest Scam",
+    "target": "law_enforcement",
+    "detail": "CBI / Mumbai Cyber Crime Parcel Drug Impersonation",
+    "phones": [
+      "+917766554433",
+      "+917766554422"
+    ],
+    "upis": [
+      "cbi.official.clearance@sbi",
+      "cybercell.narcotics@hdfc"
+    ],
+    "domains": [
+      "cbi-clearance-verification.in"
+    ],
+    "ips": [
+      "195.123.245.90"
+    ],
+    "hashes": [
+      "ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d"
+    ],
+    "malware": "VideoRecord Extortion Toolkit",
+    "actor": "ShadowArrest",
+    "tactics": [
+      "fear_induction",
+      "authority_impersonation",
+      "isolation_tactic"
+    ],
+    "languages": [
+      "english",
+      "hindi",
+      "hinglish"
+    ],
+    "incident_count": 18
+  }
+]
