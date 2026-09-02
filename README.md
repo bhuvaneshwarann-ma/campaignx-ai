@@ -19,11 +19,17 @@ An evidence-driven, enterprise-grade threat and scam intelligence platform that 
 
 - [Key Capabilities](#-key-capabilities)
 - [System Architecture & Data Flow](#-system-architecture--data-flow)
+- [Deep-Dive Core Engines & Algorithms](#-deep-dive-core-engines--algorithms)
+  - [1. Hybrid Correlation Engine](#1-hybrid-correlation-engine)
+  - [2. Privacy-Preserving HMAC Anonymization](#2-privacy-preserving-hmac-anonymization)
+  - [3. False-Positive Rejection Guard](#3-false-positive-rejection-guard)
+  - [4. Evidence Ledger & Confidence Namespaces](#4-evidence-ledger--confidence-namespaces)
 - [Scam DNA Taxonomy & MITRE ATT&CK Mapping](#-scam-dna-taxonomy--mitre-attck-mapping)
+- [Database Schema & Data Models](#-database-schema--data-models)
+- [Multi-Provider Threat Intel & AI Architecture](#-multi-provider-threat-intel--ai-architecture)
 - [Empirical Evaluation & Performance](#-empirical-evaluation--performance)
 - [Project Directory Structure](#-project-directory-structure)
 - [Quickstart Guide](#-quickstart-guide)
-  - [Prerequisites](#prerequisites)
   - [1. Backend Setup](#1-backend-setup)
   - [2. Frontend Setup](#2-frontend-setup)
   - [3. Docker Deployment](#3-docker-deployment)
@@ -31,6 +37,7 @@ An evidence-driven, enterprise-grade threat and scam intelligence platform that 
 - [Complete Environment Variables Reference](#-complete-environment-variables-reference)
 - [API Reference & Example Requests](#-api-reference--example-requests)
 - [Demo Walkthrough Scenarios](#-demo-walkthrough-scenarios)
+- [Troubleshooting & FAQ](#-troubleshooting--faq)
 - [Automated Testing](#-automated-testing)
 - [License](#-license)
 
@@ -96,9 +103,66 @@ An evidence-driven, enterprise-grade threat and scam intelligence platform that 
 
 ---
 
-## 🧬 Scam DNA Taxonomy & MITRE ATT&CK Mapping
+## ⚙️ Deep-Dive Core Engines & Algorithms
 
-CAMPAIGNX AI breaks down incoming unstructured scam telemetry into standardized taxonomic dimensions:
+### 1. Hybrid Correlation Engine
+
+CampaignX AI employs a two-stage hybrid correlation model designed to combine high-speed candidate search with high-precision relationship validation:
+
+```
+Telemetry Input ──► [ Stage 1: Vector Search ] ──► Candidate Pairs (Top-K, S ≥ 0.72)
+                                                         │
+                                                         ▼
+                                             [ Stage 2: Multi-Factor Rule Check ]
+                                             ├─ Shared Domain / IP Link?
+                                             ├─ Shared Anonymized Phone / UPI?
+                                             └─ Temporal Proximity (Δt ≤ 72h)?
+                                                         │
+                                                         ▼
+                                                 [ Campaign Cluster ]
+```
+
+* **Stage 1 (ML Candidate Generation)**: TF-IDF n-gram vectorization and semantic embeddings generate initial incident pairs with cosine similarity $S \ge 0.72$.
+* **Stage 2 (Deterministic Verification)**: Candidate pairs must satisfy at least one hard infrastructure link (matching FQDN, IP subnet `/24`, file hash, or HMAC-masked telephone/UPI) within a rolling 72-hour temporal window.
+
+---
+
+### 2. Privacy-Preserving HMAC Anonymization
+
+To protect end-user Personally Identifiable Information (PII) while preserving analytical entity correlation:
+
+$$\text{HMAC\_Hash} = \text{HMAC-SHA256}(\text{PII\_HMAC\_KEY}, \text{Normalize}(\text{Indicator}))$$
+
+* **Phone Numbers**: Converted to E.164 standard (`+919876543210`) before HMAC hashing (`phone:a7f9...`).
+* **UPI Handles**: Lowercased and stripped of whitespace before HMAC hashing (`upi:3e10...`).
+* **Result**: Threat analysts can query whether two incidents originate from the same actor without raw PII exposure.
+
+---
+
+### 3. False-Positive Rejection Guard
+
+Traditional correlation engines generate massive false-positive clusters due to common scam vocabulary. CampaignX AI enforces a strict rejection decision matrix:
+
+| Shared Indicators | Shared Keywords | Rule Decision | Resulting Action |
+|---|---|---|---|
+| Domain / IP / Hash | High (`KYC`, `OTP`, `bank`) | **VERIFIED** | Linked into Campaign Cluster |
+| Anonymized Phone / UPI | High (`KYC`, `OTP`, `bank`) | **VERIFIED** | Linked into Campaign Cluster |
+| None (No Technical Match) | High (`KYC`, `OTP`, `bank`) | **REJECTED** | Discarded (False Positive Rejection) |
+| None (No Technical Match) | Low | **REJECTED** | Standalone Incident |
+
+---
+
+### 4. Evidence Ledger & Confidence Namespaces
+
+Every relationship and entity in the threat graph links to an immutable evidence record categorized into strict confidence namespaces:
+
+* `OBSERVED`: Empirical facts directly extracted from submitted raw messages or logs (e.g. extracted URL, sender phone, header timestamp).
+* `INFERRED`: Derived technical findings corroborated by multi-provider intelligence (e.g. VirusTotal detection ratio > 10, AbuseIPDB confidence score > 80%).
+* `PREDICTED`: Machine learning & LLM reasoning inferences (e.g. predicted threat syndicate attribution, estimated victim impact).
+
+---
+
+## 🧬 Scam DNA Taxonomy & MITRE ATT&CK Mapping
 
 ### Taxonomy Breakdown
 
@@ -118,6 +182,40 @@ CAMPAIGNX AI breaks down incoming unstructured scam telemetry into standardized 
 | **T1598.003** | Phishing for Information: Spearphishing Link | Reconnaissance | Phishing forms designed to harvest credentials & OTPs. |
 | **T1071.001** | Application Layer Protocol: Web Protocols | Command & Control | C2 communications over HTTP/HTTPS protocols. |
 | **T1110.001** | Brute Force: Password Guessing | Credential Access | Credential stuffing targeting financial portals. |
+
+---
+
+## 🗄️ Database Schema & Data Models
+
+CampaignX AI uses SQLAlchemy ORM supporting SQLite and PostgreSQL. The primary data models include:
+
+| Model | Purpose | Key Attributes |
+|---|---|---|
+| `User` | Authentication & RBAC | `id`, `username`, `email`, `hashed_password`, `role` |
+| `Incident` | Telemetry records | `id`, `channel`, `raw_content`, `language`, `risk_score` |
+| `ScamDNA` | Extracted taxonomy | `id`, `incident_id`, `brand`, `urgency_score`, `lures` |
+| `Entity` | Canonical IOC nodes | `id`, `type` (*ip, domain, hash, phone, upi*), `value` |
+| `Campaign` | Threat syndicate clusters | `id`, `name`, `status`, `threat_level`, `incidents_count` |
+| `Relationship` | Graph edges | `source_id`, `target_id`, `type`, `confidence` |
+| `Evidence` | Audit trail | `id`, `namespace` (*OBSERVED, INFERRED*), `provenance` |
+| `AttackTechnique` | MITRE ATT&CK map | `technique_id`, `name`, `tactic`, `description` |
+
+---
+
+## 🔌 Multi-Provider Threat Intel & AI Architecture
+
+### Threat Intelligence Adapters
+CampaignX AI integrates multi-engine threat intelligence adapters with automatic offline fallback:
+* **VirusTotal API**: Scans hashes, domains, and IPs across 70+ antivirus engines.
+* **AbuseIPDB API**: IP reputation check and recent abuse reports.
+* **ThreatFox API**: Real-time IOC feed matching for malware C2s.
+* **CIRCL CVE API**: Vulnerability lookup for software CVEs.
+* **Offline Mock Provider**: Deterministic local fallback supplying instant ground-truth telemetry without network calls.
+
+### AI Investigator Provider Fallback Hierarchy
+When an analyst submits a query to the AI Investigator, the engine attempts providers in order:
+
+$$\text{Gemini 1.5/2.0} \xrightarrow{\text{fallback}} \text{xAI Grok} \xrightarrow{\text{fallback}} \text{OpenRouter} \xrightarrow{\text{fallback}} \text{Offline Mock Engine}$$
 
 ---
 
@@ -349,6 +447,19 @@ curl -X GET "http://localhost:8000/api/v1/reports/stix/CAMP-2026-001"
 2. Inspect multi-engine detections and risk score `92/100 (CRITICAL)`.
 3. Pivot from IP → Malware (`FakeBank APK Stealer`) → Threat Actor (`PhantomRaven`) → ATT&CK (`T1566.002`).
 4. Click **Export STIX / PDF** to download the structured STIX 2.1 JSON bundle.
+
+---
+
+## ❓ Troubleshooting & FAQ
+
+### Q: Why does SQLite throw `database is locked` error during heavy ingestion?
+> **Solution**: Set `DATABASE_URL=sqlite:///./campaignx.db?timeout=30` or switch to PostgreSQL by setting `DATABASE_URL=postgresql://user:password@localhost:5432/campaignx_db`.
+
+### Q: How do I run the platform completely offline without internet connectivity?
+> **Solution**: Keep `MODE=offline` in your `.env`. The system uses embedded synthetic dataset generators and local mock threat intelligence providers.
+
+### Q: Why are API requests failing with CORS errors when accessing from custom domains?
+> **Solution**: Add your domain to `CORS_ORIGINS` in `backend/app/core/config.py` or set environment variable `FRONTEND_URL=https://your-domain.vercel.app`.
 
 ---
 
