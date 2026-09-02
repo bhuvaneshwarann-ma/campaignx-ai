@@ -6,6 +6,7 @@
 [![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688.svg)](https://fastapi.tiangolo.com/)
 [![React 18](https://img.shields.io/badge/Frontend-React%2018-61DAFB.svg)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Build-Vite-646CFF.svg)](https://vitejs.dev/)
+[![Vercel](https://img.shields.io/badge/Deploy-Vercel-000000.svg)](https://vercel.com/)
 [![Docker](https://img.shields.io/badge/Deployment-Docker%20Compose-2496ED.svg)](https://www.docker.com/)
 [![STIX 2.1](https://img.shields.io/badge/Standard-STIX%202.1-FF6F00.svg)](https://oasis-open.github.io/cti-documentation/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -17,17 +18,19 @@ An evidence-driven, enterprise-grade threat and scam intelligence platform that 
 ## 📋 Table of Contents
 
 - [Key Capabilities](#-key-capabilities)
-- [System Architecture](#-system-architecture)
+- [System Architecture & Data Flow](#-system-architecture--data-flow)
+- [Scam DNA Taxonomy & MITRE ATT&CK Mapping](#-scam-dna-taxonomy--mitre-attck-mapping)
 - [Empirical Evaluation & Performance](#-empirical-evaluation--performance)
 - [Project Directory Structure](#-project-directory-structure)
 - [Quickstart Guide](#-quickstart-guide)
   - [Prerequisites](#prerequisites)
-  - [Backend Setup](#1-backend-setup)
-  - [Frontend Setup](#2-frontend-setup)
-  - [Docker Deployment](#3-docker-deployment)
-- [Configuration & Environment Variables](#-configuration--environment-variables)
-- [API Reference](#-api-reference)
-- [Demo Walkthrough](#-demo-walkthrough)
+  - [1. Backend Setup](#1-backend-setup)
+  - [2. Frontend Setup](#2-frontend-setup)
+  - [3. Docker Deployment](#3-docker-deployment)
+  - [4. Vercel Cloud Deployment](#4-vercel-cloud-deployment)
+- [Complete Environment Variables Reference](#-complete-environment-variables-reference)
+- [API Reference & Example Requests](#-api-reference--example-requests)
+- [Demo Walkthrough Scenarios](#-demo-walkthrough-scenarios)
 - [Automated Testing](#-automated-testing)
 - [License](#-license)
 
@@ -50,7 +53,7 @@ An evidence-driven, enterprise-grade threat and scam intelligence platform that 
 
 ---
 
-## 🏗️ System Architecture
+## 🏗️ System Architecture & Data Flow
 
 ```
                                     CAMPAIGNX AI PIPELINE
@@ -93,6 +96,31 @@ An evidence-driven, enterprise-grade threat and scam intelligence platform that 
 
 ---
 
+## 🧬 Scam DNA Taxonomy & MITRE ATT&CK Mapping
+
+CAMPAIGNX AI breaks down incoming unstructured scam telemetry into standardized taxonomic dimensions:
+
+### Taxonomy Breakdown
+
+| Dimension | Extracted Elements | Example Lures |
+|---|---|---|
+| **Impersonated Entities** | Banking, Postal, Logistics, Telecom, Utility | *SBI, HDFC, ICICI, India Post, FedEx, Electricity Board* |
+| **Psychological Drivers** | Urgency, Fear, Financial Gain, Disruption | *"Account blocked", "Suspension in 2 hours", "Refund credited"* |
+| **Payment Vectors** | UPI Handles, Bank Accounts, Crypto Wallets | `paytm-kyc@upi`, `sbi.verify@ybl`, `0x71C...` |
+| **Technical Lures** | Phishing Links, APK Downloaders, Fake Portals | `https://sbi-kyc-verify-online.com`, `http://apk-drop.net/sbi.apk` |
+
+### MITRE ATT&CK Technique Mapping
+
+| Technique ID | Name | Tactic | Description |
+|---|---|---|---|
+| **T1566.002** | Phishing: Spearphishing Link | Initial Access | Adversaries send scam communications containing malicious links. |
+| **T1566.001** | Phishing: Spearphishing Attachment | Initial Access | Malicious APKs or malicious documents sent via chat/email lures. |
+| **T1598.003** | Phishing for Information: Spearphishing Link | Reconnaissance | Phishing forms designed to harvest credentials & OTPs. |
+| **T1071.001** | Application Layer Protocol: Web Protocols | Command & Control | C2 communications over HTTP/HTTPS protocols. |
+| **T1110.001** | Brute Force: Password Guessing | Credential Access | Credential stuffing targeting financial portals. |
+
+---
+
 ## 📊 Empirical Evaluation & Performance
 
 Tested against a benchmark suite of **118 ground-truth multilingual telemetry incidents** and negative control samples:
@@ -116,6 +144,7 @@ Tested against a benchmark suite of **118 ground-truth multilingual telemetry in
 
 ```
 campaignx-ai/
+├── api/                      # Vercel Serverless Entrypoint (api/index.py)
 ├── backend/                  # Python FastAPI Backend
 │   ├── app/
 │   │   ├── ai/               # Grounded AI Investigator & Provider Integrations
@@ -143,6 +172,8 @@ campaignx-ai/
 ├── docs/                     # Architecture, Evaluation, & Demo Documentation
 ├── docker/                   # Backend & Frontend Container Specifications
 ├── docker-compose.yml        # Docker Compose Orchestration Setup
+├── vercel.json               # Vercel Deployment Configuration
+├── requirements.txt          # Root Python Requirements Specification
 └── README.md
 ```
 
@@ -165,8 +196,10 @@ campaignx-ai/
 # Navigate to repository root
 cd CAMPAIGNX-AI
 
-# Create virtual environment (optional but recommended)
+# Create virtual environment
 python -m venv venv
+
+# Activate virtual environment
 # On Windows:
 venv\Scripts\activate
 # On Linux/macOS:
@@ -175,12 +208,12 @@ source venv/bin/activate
 # Install backend dependencies
 pip install -r backend/requirements.txt
 
-# Start FastAPI application in offline mode (uses local SQLite database)
+# Start FastAPI application in offline mode
 python -m uvicorn backend.app.main:app --host 0.0.0.0 --port 8000 --reload
 ```
 
-* Swagger API Documentation: `http://localhost:8000/docs`
-* ReDoc API Documentation: `http://localhost:8000/redoc`
+* **Swagger Interactive Docs**: `http://localhost:8000/docs`
+* **ReDoc API Specifications**: `http://localhost:8000/redoc`
 
 ---
 
@@ -190,20 +223,20 @@ python -m uvicorn backend.app.main:app --host 0.0.0.0 --port 8000 --reload
 # Navigate to frontend directory
 cd frontend
 
-# Install node dependencies
+# Install dependencies
 npm install
 
 # Start Vite development server
 npm run dev
 ```
 
-* Web Application Dashboard: `http://localhost:5173`
+* **Web Dashboard**: `http://localhost:5173`
 
 ---
 
 ### 3. Docker Deployment
 
-To launch the complete application stack (Backend + Frontend) via Docker:
+Launch the complete containerized stack (FastAPI Backend + React Frontend):
 
 ```bash
 docker compose up -d --build
@@ -213,48 +246,89 @@ Access the frontend at `http://localhost:5173` and backend services at `http://l
 
 ---
 
-## ⚙️ Configuration & Environment Variables
+### 4. Vercel Cloud Deployment
 
-Create a `.env` file in the project root to configure custom settings (or rely on built-in offline defaults):
+The repository includes pre-configured [`vercel.json`](file:///c:/Users/GUNALAN/Downloads/CAMPAIGNX%20AI/vercel.json) and [`api/index.py`](file:///c:/Users/GUNALAN/Downloads/CAMPAIGNX%20AI/api/index.py) files for seamless single-click full-stack deployment.
 
-```env
-# Core System Settings
-MODE=offline                         # 'offline' or 'online'
-SECRET_KEY=your-super-secret-key-change-me
-DATABASE_URL=sqlite:///./campaignx.db
+1. Push your repository to GitHub.
+2. Go to [https://vercel.com/new](https://vercel.com/new) and import your repository.
+3. Keep default settings (`vercel.json` automatically configures Python serverless API and Vite static build).
+4. Click **Deploy**.
 
-# Threat Intelligence APIs (Optional for Online Enrichment)
-VIRUSTOTAL_API_KEY=
-ABUSEIPDB_API_KEY=
-THREATFOX_API_KEY=
+---
 
-# AI Investigator Providers (Optional)
-GEMINI_API_KEY=
-GROK_API_KEY=
-OPENROUTER_API_KEY=
-DEFAULT_AI_PROVIDER=mock              # 'mock', 'gemini', 'grok', 'openrouter'
+## ⚙️ Complete Environment Variables Reference
+
+Below is the exhaustive list of environment variables configurable in your `.env` file:
+
+| Variable | Default Value | Description |
+|---|---|---|
+| `MODE` | `offline` | Execution mode (`offline` or `online`). In offline mode, synthetic data and deterministic mock AI are used. |
+| `APP_ENV` | `development` | Application environment (`development`, `production`, `testing`). |
+| `DEBUG` | `true` | Enables detailed error traces and reload mode. |
+| `DATABASE_URL` | `sqlite:///./campaignx.db` | Database connection URI (Supports SQLite or PostgreSQL). |
+| `REDIS_URL` | `redis://localhost:6379/0` | Redis caching connection URI. |
+| `JWT_SECRET` | *32-byte string* | Secret key used for signing JWT authentication tokens. |
+| `ACCESS_TOKEN_EXPIRE_MINUTES` | `1440` | JWT token validity duration in minutes (Default: 24 hours). |
+| `ALGORITHM` | `HS256` | Cryptographic algorithm for JWT signatures. |
+| `PII_HMAC_KEY` | *32-byte string* | Key used for HMAC-SHA256 anonymization of phone numbers and UPIs. |
+| `BACKEND_HOST` | `0.0.0.0` | Bind host address for uvicorn server. |
+| `BACKEND_PORT` | `8001` / `8000` | Port for the backend service. |
+| `FRONTEND_URL` | `http://localhost:5173` | Allowed frontend origin URL for CORS policy. |
+| `GEMINI_API_KEY` | `""` | *(Optional)* Google Gemini API key for AI Investigation. |
+| `OPENROUTER_API_KEY` | `""` | *(Optional)* OpenRouter API key for LLM investigation fallback. |
+| `GROK_API_KEY` | `""` | *(Optional)* xAI Grok API key. |
+| `VIRUSTOTAL_API_KEY` | `""` | *(Optional)* VirusTotal API key for live enrichment. |
+| `ABUSEIPDB_API_KEY` | `""` | *(Optional)* AbuseIPDB API key for IP reputation checks. |
+| `THREATFOX_API_KEY` | `""` | *(Optional)* ThreatFox API key for IOC feeds. |
+
+---
+
+## 🔌 API Reference & Example Requests
+
+### Ingest Telemetry / Scam Message
+
+```bash
+curl -X POST "http://localhost:8000/api/v1/incidents" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "channel": "SMS",
+    "raw_content": "URGENT: Your SBI account has been suspended due to pending KYC update. Visit https://sbi-kyc-verify-online.com or call +919876543210 immediately.",
+    "source": "user_report"
+  }'
+```
+
+### Lookup Technical Indicator
+
+```bash
+curl -X POST "http://localhost:8000/api/v1/ioc/lookup" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "query": "185.220.101.5",
+    "depth": 2
+  }'
+```
+
+### Query AI Investigator
+
+```bash
+curl -X POST "http://localhost:8000/api/v1/ai/analyze" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "query": "Why are incidents linked to sbi-kyc-verify-online.com grouped into the same campaign?",
+    "campaign_id": "CAMP-2026-001"
+  }'
+```
+
+### Export Campaign as STIX 2.1 JSON
+
+```bash
+curl -X GET "http://localhost:8000/api/v1/reports/stix/CAMP-2026-001"
 ```
 
 ---
 
-## 🔌 API Reference
-
-| Endpoint | Method | Description |
-|---|:---:|---|
-| `/api/v1/incidents` | `POST` | Ingest technical IOCs or scam messages |
-| `/api/v1/incidents` | `GET` | Retrieve list of telemetry incidents |
-| `/api/v1/campaigns` | `GET` | List active threat campaigns & syndicates |
-| `/api/v1/graph` | `GET` | Fetch NetworkX threat graph nodes and links |
-| `/api/v1/ioc/{indicator}` | `GET` | Query multi-provider threat intelligence for an indicator |
-| `/api/v1/hunting` | `POST` | Execute universal threat hunting search queries |
-| `/api/v1/ai/investigate` | `POST` | Query the AI Investigator for grounded campaign analysis |
-| `/api/v1/attack` | `GET` | Retrieve MITRE ATT&CK matrix mappings |
-| `/api/v1/evaluation` | `GET` | Run live benchmark evaluation suite |
-| `/api/v1/reports/stix/{id}` | `GET` | Export campaign bundle as STIX 2.1 JSON |
-
----
-
-## 🎬 Demo Walkthrough
+## 🎬 Demo Walkthrough Scenarios
 
 ### Scenario 1: Multilingual Scam Telemetry to Syndicate Attribution
 1. Open the **SOC Dashboard** (`http://localhost:5173`) and review active campaigns.
@@ -269,6 +343,12 @@ DEFAULT_AI_PROVIDER=mock              # 'mock', 'gemini', 'grok', 'openrouter'
 4. The **Hybrid Correlation Engine** correlates both incidents via shared domain `sbi-kyc-verify-online.com` and phone `+919876543210`.
 5. Click **Threat Graph** to view connected nodes and open **Evidence Drawer** to review canonical `OBSERVED` provenance.
 6. Ask the **AI Investigator**: *"Why are these incidents connected?"* to receive explainable reasoning.
+
+### Scenario 2: Technical IOC Pivoting & MITRE ATT&CK Mapping
+1. In Universal Search, enter C2 IP: `185.220.101.5`.
+2. Inspect multi-engine detections and risk score `92/100 (CRITICAL)`.
+3. Pivot from IP → Malware (`FakeBank APK Stealer`) → Threat Actor (`PhantomRaven`) → ATT&CK (`T1566.002`).
+4. Click **Export STIX / PDF** to download the structured STIX 2.1 JSON bundle.
 
 ---
 
@@ -285,4 +365,5 @@ pytest backend/tests -v
 ## 📄 License
 
 Distributed under the MIT License. See `LICENSE` for details.
+
 
